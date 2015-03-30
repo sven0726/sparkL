@@ -1,0 +1,5 @@
+[warn] There may be incompatibilities among your library dependencies.
+[warn] Here are some of the libraries that were evicted:
+[warn] 	* com.google.code.findbugs:jsr305:1.3.9 -> 2.0.1
+[warn] 	* commons-net:commons-net:1.4.1 -> 2.2
+[warn] Run 'evicted' to see detailed eviction warnings

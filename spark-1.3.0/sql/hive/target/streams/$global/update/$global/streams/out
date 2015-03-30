@@ -1,0 +1,4 @@
+[warn] There may be incompatibilities among your library dependencies.
+[warn] Here are some of the libraries that were evicted:
+[warn] 	* com.google.guava:guava:11.0.2 -> 14.0.1
+[warn] Run 'evicted' to see detailed eviction warnings
