@@ -44,10 +44,16 @@ import org.apache.spark.util.Utils
  *
  * @param loadDefaults whether to also load values from Java system properties
  */
+/**
+  SparkConf 只有一个类型为ConcurrentHashMap的属性： settings。
+  可以设置和删除其他的map类型的属性
+ */
 class SparkConf(loadDefaults: Boolean) extends Cloneable with Logging {
 
   import SparkConf._
 
+
+  /**创建默认的sparkconf  装载系统的属性和classpath*/
   /** Create a SparkConf that loads defaults from system properties and the classpath */
   def this() = this(true)
 

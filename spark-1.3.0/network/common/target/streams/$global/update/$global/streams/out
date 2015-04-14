@@ -1,4 +1,4 @@
-[info] Updating {file:/home/sven/work/spark/spark/spark-1.3.0/}network-common...
+[info] Updating {file:/home/qiniu/work/spark/spark-1.3.0/}network-common...
 [debug] :: resolving dependencies :: org.apache.spark#spark-network-common_2.10;1.3.0
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for org.apache.spark#spark-network-common_2.10;1.3.0 [compile]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21dcd60
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28017f2b
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-library;2.10.4
@@ -17,24 +17,176 @@
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->io.netty#netty-all;4.0.23.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-all;4.0.23.Final ...
 [debug] sbt-chain: Checking cache for: dependency: io.netty#netty-all;4.0.23.Final {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: io.netty#netty-all;4.0.23.Final
-[debug] 	found io.netty#netty-all;4.0.23.Final in sbt-chain
+[info] Resolving io.netty#netty-all;4.0.23.Final ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: io.netty#netty-all;4.0.23.Final {compile=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/io.netty/netty-all/4.0.23.Final/ivys/ivy.xml
+[debug] 	local: no ivy file found for io.netty#netty-all;4.0.23.Final
+[debug] 		tried https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom
+[debug] 	public: found md file for io.netty#netty-all;4.0.23.Final
+[debug] 		=> https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom (4.0.23.Final)
+[debug] downloading https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom
+[debug] 	[SUCCESSFUL ] io.netty#netty-all;4.0.23.Final!netty-all.pom(pom.original) (1588ms)
+[info] Resolving io.netty#netty-parent;4.0.23.Final ...
+[debug] sbt-chain: Checking cache for: dependency: io.netty#netty-parent;4.0.23.Final {}
+[info] Resolving io.netty#netty-parent;4.0.23.Final ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: io.netty#netty-parent;4.0.23.Final {}
+[debug] 		tried /home/qiniu/.ivy2/local/io.netty/netty-parent/4.0.23.Final/ivys/ivy.xml
+[debug] 	local: no ivy file found for io.netty#netty-parent;4.0.23.Final
+[debug] 		tried https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.pom
+[debug] 	public: found md file for io.netty#netty-parent;4.0.23.Final
+[debug] 		=> https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.pom (4.0.23.Final)
+[debug] downloading https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.pom
+[debug] 	[SUCCESSFUL ] io.netty#netty-parent;4.0.23.Final!netty-parent.pom(pom.original) (1499ms)
+[info] Resolving org.sonatype.oss#oss-parent;9 ...
+[debug] sbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;9 {}
+[info] Resolving org.sonatype.oss#oss-parent;9 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.sonatype.oss#oss-parent;9 {}
+[debug] 		tried /home/qiniu/.ivy2/local/org.sonatype.oss/oss-parent/9/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.sonatype.oss#oss-parent;9
+[debug] 		tried https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[debug] 	public: found md file for org.sonatype.oss#oss-parent;9
+[debug] 		=> https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom (9)
+[debug] downloading https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[debug] 	[SUCCESSFUL ] org.sonatype.oss#oss-parent;9!oss-parent.pom(pom.original) (1189ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.sonatype.oss/oss-parent/9/jars/oss-parent.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried https://repository.apache.org/content/repositories/releases/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried http://repository.mapr.com/maven/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried https://repo.spring.io/libs-release/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried http://repository.apache.org/snapshots/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+[debug] 		tried /home/qiniu/.ivy2/local/io.netty/netty-parent/4.0.23.Final/jars/netty-parent.jar
+[debug] 		tried https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried https://repository.apache.org/content/repositories/releases/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried http://repository.mapr.com/maven/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried https://repo.spring.io/libs-release/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried http://repository.apache.org/snapshots/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/io/netty/netty-parent/4.0.23.Final/netty-parent-4.0.23.Final.jar
+[debug] 		tried /home/qiniu/.ivy2/local/io.netty/netty-all/4.0.23.Final/jars/netty-all.jar
+[debug] 		tried https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar
+[debug] 	found io.netty#netty-all;4.0.23.Final in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->io.netty#netty-all;4.0.23.Final [compile->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->io.netty#netty-all;4.0.23.Final [compile->compile]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->io.netty#netty-all;4.0.23.Final [compile->master]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.google.guava#guava;14.0.1 [compile->default(compile)]
 [info] Resolving com.google.guava#guava;14.0.1 ...
 [debug] sbt-chain: Checking cache for: dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.google.guava#guava;14.0.1
-[debug] 	found com.google.guava#guava;14.0.1 in sbt-chain
+[info] Resolving com.google.guava#guava;14.0.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.google.guava/guava/14.0.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.google.guava#guava;14.0.1
+[debug] 		tried https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[debug] 	public: found md file for com.google.guava#guava;14.0.1
+[debug] 		=> https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom (14.0.1)
+[debug] downloading https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[debug] 	[SUCCESSFUL ] com.google.guava#guava;14.0.1!guava.pom(pom.original) (1229ms)
+[info] Resolving com.google.guava#guava-parent;14.0.1 ...
+[debug] sbt-chain: Checking cache for: dependency: com.google.guava#guava-parent;14.0.1 {}
+[info] Resolving com.google.guava#guava-parent;14.0.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.google.guava#guava-parent;14.0.1 {}
+[debug] 		tried /home/qiniu/.ivy2/local/com.google.guava/guava-parent/14.0.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.google.guava#guava-parent;14.0.1
+[debug] 		tried https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom
+[debug] 	public: found md file for com.google.guava#guava-parent;14.0.1
+[debug] 		=> https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom (14.0.1)
+[debug] downloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom
+[debug] 	[SUCCESSFUL ] com.google.guava#guava-parent;14.0.1!guava-parent.pom(pom.original) (1024ms)
+[info] Resolving org.sonatype.oss#oss-parent;7 ...
+[debug] sbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}
+[debug] sbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7
+[debug] 		tried /home/qiniu/.ivy2/local/com.google.guava/guava-parent/14.0.1/jars/guava-parent.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repository.apache.org/content/repositories/releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried http://repository.mapr.com/maven/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repo.spring.io/libs-release/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried /home/qiniu/.ivy2/local/com.google.guava/guava-parent/14.0.1/jars/guava-parent.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repository.apache.org/content/repositories/releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried http://repository.mapr.com/maven/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried https://repo.spring.io/libs-release/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.jar
+[debug] 		tried /home/qiniu/.ivy2/local/com.google.guava/guava/14.0.1/bundles/guava.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[debug] 	found com.google.guava#guava;14.0.1 in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.google.guava#guava;14.0.1 [compile->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.google.guava#guava;14.0.1 [compile->compile]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.google.guava#guava;14.0.1 [compile->master]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
 [info] Resolving org.spark-project.spark#unused;1.0.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.spark-project.spark#unused;1.0.0 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0
-[debug] 	found org.spark-project.spark#unused;1.0.0 in sbt-chain
+[info] Resolving org.spark-project.spark#unused;1.0.0 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.spark-project.spark#unused;1.0.0 {compile=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.spark-project.spark/unused/1.0.0/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.spark-project.spark#unused;1.0.0
+[debug] 		tried https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.pom
+[debug] 	public: found md file for org.spark-project.spark#unused;1.0.0
+[debug] 		=> https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.pom (1.0.0)
+[debug] downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.pom
+[debug] 	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.pom(pom.original) (1234ms)
+[info] Resolving org.sonatype.oss#oss-parent;9 ...
+[debug] sbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;9 {}
+[debug] sbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;9
+[debug] 		tried /home/qiniu/.ivy2/local/org.spark-project.spark/unused/1.0.0/jars/unused.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar
+[debug] 	found org.spark-project.spark#unused;1.0.0 in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.spark-project.spark#unused;1.0.0 [compile->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.spark-project.spark#unused;1.0.0 [compile->compile]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.spark-project.spark#unused;1.0.0 [compile->master]
@@ -80,15 +232,75 @@
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->junit#junit;4.10 [test->default(compile)]
 [info] Resolving junit#junit;4.10 ...
 [debug] sbt-chain: Checking cache for: dependency: junit#junit;4.10 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: junit#junit;4.10
-[debug] 	found junit#junit;4.10 in sbt-chain
+[info] Resolving junit#junit;4.10 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: junit#junit;4.10 {test=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/junit/junit/4.10/ivys/ivy.xml
+[debug] 	local: no ivy file found for junit#junit;4.10
+[debug] 		tried https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom
+[debug] 	public: found md file for junit#junit;4.10
+[debug] 		=> https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom (4.10)
+[debug] downloading https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom
+[debug] 	[SUCCESSFUL ] junit#junit;4.10!junit.pom(pom.original) (2625ms)
+[debug] 		tried /home/qiniu/.ivy2/local/junit/junit/4.10/jars/junit.jar
+[debug] 		tried https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar
+[debug] 	found junit#junit;4.10 in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->junit#junit;4.10 [test->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->junit#junit;4.10 [test->compile]
 [debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)]
 [info] Resolving org.hamcrest#hamcrest-core;1.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.hamcrest#hamcrest-core;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.hamcrest#hamcrest-core;1.1
-[debug] 	found org.hamcrest#hamcrest-core;1.1 in sbt-chain
+[info] Resolving org.hamcrest#hamcrest-core;1.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.hamcrest#hamcrest-core;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.hamcrest/hamcrest-core/1.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.hamcrest#hamcrest-core;1.1
+[debug] 		tried https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[debug] 	public: found md file for org.hamcrest#hamcrest-core;1.1
+[debug] 		=> https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom (1.1)
+[debug] downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[debug] 	[SUCCESSFUL ] org.hamcrest#hamcrest-core;1.1!hamcrest-core.pom(pom.original) (1232ms)
+[info] Resolving org.hamcrest#hamcrest-parent;1.1 ...
+[debug] sbt-chain: Checking cache for: dependency: org.hamcrest#hamcrest-parent;1.1 {}
+[info] Resolving org.hamcrest#hamcrest-parent;1.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.hamcrest#hamcrest-parent;1.1 {}
+[debug] 		tried /home/qiniu/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.hamcrest#hamcrest-parent;1.1
+[debug] 		tried https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[debug] 	public: found md file for org.hamcrest#hamcrest-parent;1.1
+[debug] 		=> https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom (1.1)
+[debug] downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[debug] 	[SUCCESSFUL ] org.hamcrest#hamcrest-parent;1.1!hamcrest-parent.pom(pom.original) (1142ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/jars/hamcrest-parent.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried https://repository.apache.org/content/repositories/releases/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried http://repository.mapr.com/maven/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried https://repo.spring.io/libs-release/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried http://repository.apache.org/snapshots/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[debug] 	found org.hamcrest#hamcrest-core;1.1 in public
 [debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)]
 [debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->runtime(*)]
 [debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->compile]
@@ -98,15 +310,41 @@
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.novocode#junit-interface;0.10 [test->default(compile)]
 [info] Resolving com.novocode#junit-interface;0.10 ...
 [debug] sbt-chain: Checking cache for: dependency: com.novocode#junit-interface;0.10 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.novocode#junit-interface;0.10
-[debug] 	found com.novocode#junit-interface;0.10 in sbt-chain
+[info] Resolving com.novocode#junit-interface;0.10 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.novocode#junit-interface;0.10 {test=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.novocode/junit-interface/0.10/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.novocode#junit-interface;0.10
+[debug] 		tried https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.pom
+[debug] 	public: found md file for com.novocode#junit-interface;0.10
+[debug] 		=> https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.pom (0.10)
+[debug] downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.pom
+[debug] 	[SUCCESSFUL ] com.novocode#junit-interface;0.10!junit-interface.pom(pom.original) (2262ms)
+[debug] 		tried /home/qiniu/.ivy2/local/com.novocode/junit-interface/0.10/jars/junit-interface.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.jar
+[debug] 	found com.novocode#junit-interface;0.10 in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.novocode#junit-interface;0.10 [test->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.novocode#junit-interface;0.10 [test->compile]
 [debug] == resolving dependencies com.novocode#junit-interface;0.10->junit#junit-dep;4.10 [compile->compile(*)]
 [info] Resolving junit#junit-dep;4.10 ...
 [debug] sbt-chain: Checking cache for: dependency: junit#junit-dep;4.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: junit#junit-dep;4.10
-[debug] 	found junit#junit-dep;4.10 in sbt-chain
+[info] Resolving junit#junit-dep;4.10 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: junit#junit-dep;4.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/junit/junit-dep/4.10/ivys/ivy.xml
+[debug] 	local: no ivy file found for junit#junit-dep;4.10
+[debug] 		tried https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.pom
+[debug] 	public: found md file for junit#junit-dep;4.10
+[debug] 		=> https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.pom (4.10)
+[debug] downloading https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.pom
+[debug] 	[SUCCESSFUL ] junit#junit-dep;4.10!junit-dep.pom(pom.original) (1833ms)
+[debug] 		tried /home/qiniu/.ivy2/local/junit/junit-dep/4.10/jars/junit-dep.jar
+[debug] 		tried https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.jar
+[debug] 	found junit#junit-dep;4.10 in public
 [debug] == resolving dependencies junit#junit-dep;4.10->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)]
 [debug] == resolving dependencies junit#junit-dep;4.10->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)]
 [debug] == resolving dependencies com.novocode#junit-interface;0.10->junit#junit-dep;4.10 [compile->master(compile)]
@@ -117,8 +355,21 @@
 [debug] == resolving dependencies com.novocode#junit-interface;0.10->org.scala-tools.testing#test-interface;0.5 [compile->compile(*)]
 [info] Resolving org.scala-tools.testing#test-interface;0.5 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-tools.testing#test-interface;0.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.scala-tools.testing#test-interface;0.5
-[debug] 	found org.scala-tools.testing#test-interface;0.5 in sbt-chain
+[info] Resolving org.scala-tools.testing#test-interface;0.5 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.scala-tools.testing#test-interface;0.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.scala-tools.testing/test-interface/0.5/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.scala-tools.testing#test-interface;0.5
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.pom
+[debug] 	public: found md file for org.scala-tools.testing#test-interface;0.5
+[debug] 		=> https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.pom (0.5)
+[debug] downloading https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.pom
+[debug] 	[SUCCESSFUL ] org.scala-tools.testing#test-interface;0.5!test-interface.pom(pom.original) (1133ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.scala-tools.testing/test-interface/0.5/jars/test-interface.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar
+[debug] 	found org.scala-tools.testing#test-interface;0.5 in public
 [debug] == resolving dependencies com.novocode#junit-interface;0.10->org.scala-tools.testing#test-interface;0.5 [compile->master(compile)]
 [debug] == resolving dependencies com.novocode#junit-interface;0.10->org.scala-tools.testing#test-interface;0.5 [compile->runtime(*)]
 [debug] == resolving dependencies com.novocode#junit-interface;0.10->org.scala-tools.testing#test-interface;0.5 [compile->compile]
@@ -130,24 +381,63 @@
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->log4j#log4j;1.2.17 [test->default(compile)]
 [info] Resolving log4j#log4j;1.2.17 ...
 [debug] sbt-chain: Checking cache for: dependency: log4j#log4j;1.2.17 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: log4j#log4j;1.2.17
-[debug] 	found log4j#log4j;1.2.17 in sbt-chain
+[info] Resolving log4j#log4j;1.2.17 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: log4j#log4j;1.2.17 {test=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/log4j/log4j/1.2.17/ivys/ivy.xml
+[debug] 	local: no ivy file found for log4j#log4j;1.2.17
+[debug] 		tried https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom
+[debug] 	public: found md file for log4j#log4j;1.2.17
+[debug] 		=> https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom (1.2.17)
+[debug] downloading https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom
+[debug] 	[SUCCESSFUL ] log4j#log4j;1.2.17!log4j.pom(pom.original) (1535ms)
+[debug] 		tried /home/qiniu/.ivy2/local/log4j/log4j/1.2.17/bundles/log4j.jar
+[debug] 		tried https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[debug] 	found log4j#log4j;1.2.17 in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->log4j#log4j;1.2.17 [test->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->log4j#log4j;1.2.17 [test->compile]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->log4j#log4j;1.2.17 [test->master]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.mockito#mockito-all;1.9.0 [test->default(compile)]
 [info] Resolving org.mockito#mockito-all;1.9.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.mockito#mockito-all;1.9.0 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: org.mockito#mockito-all;1.9.0
-[debug] 	found org.mockito#mockito-all;1.9.0 in sbt-chain
+[info] Resolving org.mockito#mockito-all;1.9.0 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.mockito#mockito-all;1.9.0 {test=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.mockito/mockito-all/1.9.0/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.mockito#mockito-all;1.9.0
+[debug] 		tried https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.pom
+[debug] 	public: found md file for org.mockito#mockito-all;1.9.0
+[debug] 		=> https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.pom (1.9.0)
+[debug] downloading https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.pom
+[debug] 	[SUCCESSFUL ] org.mockito#mockito-all;1.9.0!mockito-all.pom(pom.original) (1115ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.mockito/mockito-all/1.9.0/jars/mockito-all.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar
+[debug] 	found org.mockito#mockito-all;1.9.0 in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.mockito#mockito-all;1.9.0 [test->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.mockito#mockito-all;1.9.0 [test->compile]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.mockito#mockito-all;1.9.0 [test->master]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.scalatest#scalatest_2.10;2.2.1 [test->default(compile)]
 [info] Resolving org.scalatest#scalatest_2.10;2.2.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.10;2.2.1 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.10;2.2.1
-[debug] 	found org.scalatest#scalatest_2.10;2.2.1 in sbt-chain
+[info] Resolving org.scalatest#scalatest_2.10;2.2.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.scalatest#scalatest_2.10;2.2.1 {test=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.scalatest/scalatest_2.10/2.2.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.scalatest#scalatest_2.10;2.2.1
+[debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.pom
+[debug] 	public: found md file for org.scalatest#scalatest_2.10;2.2.1
+[debug] 		=> https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.pom (2.2.1)
+[debug] downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.pom
+[debug] 	[SUCCESSFUL ] org.scalatest#scalatest_2.10;2.2.1!scalatest_2.10.pom(pom.original) (2158ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.scalatest/scalatest_2.10/2.2.1/bundles/scalatest_2.10.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.jar
+[debug] 	found org.scalatest#scalatest_2.10;2.2.1 in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.scalatest#scalatest_2.10;2.2.1 [test->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.scalatest#scalatest_2.10;2.2.1 [test->compile]
 [debug] == resolving dependencies org.scalatest#scalatest_2.10;2.2.1->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
@@ -182,8 +472,55 @@
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.slf4j#slf4j-api;1.7.10 [provided->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.7.10 ...
 [debug] sbt-chain: Checking cache for: dependency: org.slf4j#slf4j-api;1.7.10 {provided=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.10
-[debug] 	found org.slf4j#slf4j-api;1.7.10 in sbt-chain
+[info] Resolving org.slf4j#slf4j-api;1.7.10 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.slf4j#slf4j-api;1.7.10 {provided=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.slf4j/slf4j-api/1.7.10/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.slf4j#slf4j-api;1.7.10
+[debug] 		tried https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+[debug] 	public: found md file for org.slf4j#slf4j-api;1.7.10
+[debug] 		=> https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom (1.7.10)
+[debug] downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+[debug] 	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.10!slf4j-api.pom(pom.original) (1436ms)
+[info] Resolving org.slf4j#slf4j-parent;1.7.10 ...
+[debug] sbt-chain: Checking cache for: dependency: org.slf4j#slf4j-parent;1.7.10 {}
+[info] Resolving org.slf4j#slf4j-parent;1.7.10 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.slf4j#slf4j-parent;1.7.10 {}
+[debug] 		tried /home/qiniu/.ivy2/local/org.slf4j/slf4j-parent/1.7.10/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.slf4j#slf4j-parent;1.7.10
+[debug] 		tried https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+[debug] 	public: found md file for org.slf4j#slf4j-parent;1.7.10
+[debug] 		=> https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom (1.7.10)
+[debug] downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+[debug] 	[SUCCESSFUL ] org.slf4j#slf4j-parent;1.7.10!slf4j-parent.pom(pom.original) (1509ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.slf4j/slf4j-parent/1.7.10/jars/slf4j-parent.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried https://repository.apache.org/content/repositories/releases/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried http://repository.mapr.com/maven/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried https://repo.spring.io/libs-release/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried http://repository.apache.org/snapshots/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.slf4j/slf4j-api/1.7.10/jars/slf4j-api.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar
+[debug] 	found org.slf4j#slf4j-api;1.7.10 in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.slf4j#slf4j-api;1.7.10 [provided->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.slf4j#slf4j-api;1.7.10 [provided->compile]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->org.slf4j#slf4j-api;1.7.10 [provided->master]
@@ -320,8 +657,21 @@
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8 [plugin->default(compile)]
 [info] Resolving com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8 {plugin=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8
-[debug] 	found com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8 in sbt-chain
+[info] Resolving com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8 {plugin=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.typesafe.genjavadoc/genjavadoc-plugin_2.10.4/0.8/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8
+[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.pom
+[debug] 	public: found md file for com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8
+[debug] 		=> https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.pom (0.8)
+[debug] downloading https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.pom
+[debug] 	[SUCCESSFUL ] com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8!genjavadoc-plugin_2.10.4.pom(pom.original) (1146ms)
+[debug] 		tried /home/qiniu/.ivy2/local/com.typesafe.genjavadoc/genjavadoc-plugin_2.10.4/0.8/jars/genjavadoc-plugin_2.10.4.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.jar
+[debug] 	found com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8 in public
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8 [plugin->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-network-common_2.10;1.3.0->com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8 [plugin->compile]
 [debug] == resolving dependencies com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8->org.scala-lang#scala-compiler;2.10.4 [compile->compile(*)]
@@ -401,36 +751,101 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar
-[debug] 	[NOT REQUIRED] io.netty#netty-all;4.0.23.Final!netty-all.jar
-[debug] 	[NOT REQUIRED] com.google.guava#guava;14.0.1!guava.jar(bundle)
-[debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar
-[debug] 	[NOT REQUIRED] junit#junit;4.10!junit.jar
-[debug] 	[NOT REQUIRED] com.novocode#junit-interface;0.10!junit-interface.jar
-[debug] 	[NOT REQUIRED] log4j#log4j;1.2.17!log4j.jar(bundle)
-[debug] 	[NOT REQUIRED] org.mockito#mockito-all;1.9.0!mockito-all.jar
-[debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.10;2.2.1!scalatest_2.10.jar(bundle)
-[debug] 	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar
-[debug] 	[NOT REQUIRED] junit#junit-dep;4.10!junit-dep.jar
-[debug] 	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar
+[debug] 		tried https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar
+[info] 	[SUCCESSFUL ] io.netty#netty-all;4.0.23.Final!netty-all.jar (14707ms)
+[debug] 		tried https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[info] downloading https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[info] 	[SUCCESSFUL ] com.google.guava#guava;14.0.1!guava.jar(bundle) (20299ms)
+[debug] 		tried https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar
+[info] downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar
+[info] 	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (2109ms)
+[debug] 		tried https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar
+[info] downloading https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar
+[info] 	[SUCCESSFUL ] junit#junit;4.10!junit.jar (5491ms)
+[debug] 		tried https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.jar
+[info] downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.jar
+[info] 	[SUCCESSFUL ] com.novocode#junit-interface;0.10!junit-interface.jar (1537ms)
+[debug] 		tried https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[info] downloading https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[info] 	[SUCCESSFUL ] log4j#log4j;1.2.17!log4j.jar(bundle) (5017ms)
+[debug] 		tried https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar
+[info] downloading https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar
+[info] 	[SUCCESSFUL ] org.mockito#mockito-all;1.9.0!mockito-all.jar (16801ms)
+[debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.jar
+[info] downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.jar
+[info] 	[SUCCESSFUL ] org.scalatest#scalatest_2.10;2.2.1!scalatest_2.10.jar(bundle) (68479ms)
+[debug] 		tried https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[info] downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[info] 	[SUCCESSFUL ] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar (1477ms)
+[debug] 		tried https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.jar
+[info] downloading https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.jar
+[info] 	[SUCCESSFUL ] junit#junit-dep;4.10!junit-dep.jar (4711ms)
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar
+[info] 	[SUCCESSFUL ] org.scala-tools.testing#test-interface;0.5!test-interface.jar (1823ms)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar
-[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.10!slf4j-api.jar
-[debug] 	[NOT REQUIRED] com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8!genjavadoc-plugin_2.10.4.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar
+[info] downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar
+[info] 	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.10!slf4j-api.jar (1299ms)
+[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.jar
+[info] downloading https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.jar
+[info] 	[SUCCESSFUL ] com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8!genjavadoc-plugin_2.10.4.jar (2256ms)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 74ms :: artifacts dl 4ms
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 compile produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-compile.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 runtime produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-runtime.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 test produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-test.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 provided produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-provided.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 optional produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-optional.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 compile-internal produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-compile-internal.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 runtime-internal produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-runtime-internal.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 test-internal produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-test-internal.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 plugin produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-plugin.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 sources produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-sources.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 docs produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-docs.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 pom produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-pom.xml
-[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 scala-tool produced in /home/sven/work/spark/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-scala-tool.xml
-[debug] 	resolve done (74ms resolve - 4ms download)
+[debug] :: resolution report :: resolve 109412ms :: artifacts dl 146782ms
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 compile produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-compile.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 runtime produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-runtime.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 test produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-test.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 provided produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-provided.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 optional produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-optional.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 compile-internal produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-compile-internal.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 runtime-internal produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-runtime-internal.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 test-internal produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-test-internal.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 plugin produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-plugin.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 sources produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-sources.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 docs produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-docs.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 pom produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-pom.xml
+[debug] 	report for org.apache.spark#spark-network-common_2.10;1.3.0 scala-tool produced in /home/qiniu/work/spark/spark-1.3.0/network/common/target/resolution-cache/reports/org.apache.spark-spark-network-common_2.10-scala-tool.xml
+[debug] 	resolve done (109412ms resolve - 146782ms download)
 [info] Done updating.

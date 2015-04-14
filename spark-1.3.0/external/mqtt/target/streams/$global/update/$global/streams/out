@@ -1,4 +1,4 @@
-[info] Updating {file:/home/sven/work/spark/spark/spark-1.3.0/}streaming-mqtt...
+[info] Updating {file:/home/qiniu/work/spark/spark-1.3.0/}streaming-mqtt...
 [debug] :: resolving dependencies :: org.apache.spark#spark-streaming-mqtt_2.10;1.3.0
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 [compile]
 [debug] == resolving dependencies org.apache.spark#spark-streaming-mqtt_2.10;1.3.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@b7c4dde
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@200e0bf0
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-library;2.10.4
@@ -1655,7 +1655,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.eclipse.paho#org.eclipse.paho.client.mqttv3;1.0.1 {compile=[default(compile)]}
 [info] Resolving org.eclipse.paho#org.eclipse.paho.client.mqttv3;1.0.1 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.eclipse.paho#org.eclipse.paho.client.mqttv3;1.0.1 {compile=[default(compile)]}
-[debug] 		tried /home/sven/.ivy2/local/org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.0.1/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.0.1/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.eclipse.paho#org.eclipse.paho.client.mqttv3;1.0.1
 [debug] 		tried https://repo1.maven.org/maven2/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.pom
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.pom
@@ -1676,12 +1676,12 @@
 [debug] 	mqtt-repo: downloading https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.pom
 [debug] 	mqtt-repo: downloading https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.pom.sha1
 [debug] sha1 OK for https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.pom
-[debug] 	[SUCCESSFUL ] org.eclipse.paho#org.eclipse.paho.client.mqttv3;1.0.1!org.eclipse.paho.client.mqttv3.pom(pom.original) (1332ms)
+[debug] 	[SUCCESSFUL ] org.eclipse.paho#org.eclipse.paho.client.mqttv3;1.0.1!org.eclipse.paho.client.mqttv3.pom(pom.original) (1227ms)
 [info] Resolving org.eclipse.paho#java-parent;1.0.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.eclipse.paho#java-parent;1.0.1 {}
 [info] Resolving org.eclipse.paho#java-parent;1.0.1 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.eclipse.paho#java-parent;1.0.1 {}
-[debug] 		tried /home/sven/.ivy2/local/org.eclipse.paho/java-parent/1.0.1/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.eclipse.paho/java-parent/1.0.1/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.eclipse.paho#java-parent;1.0.1
 [debug] 		tried https://repo1.maven.org/maven2/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.pom
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.pom
@@ -1702,8 +1702,8 @@
 [debug] 	mqtt-repo: downloading https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.pom
 [debug] 	mqtt-repo: downloading https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.pom.sha1
 [debug] sha1 OK for https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.pom
-[debug] 	[SUCCESSFUL ] org.eclipse.paho#java-parent;1.0.1!java-parent.pom(pom.original) (1343ms)
-[debug] 		tried /home/sven/.ivy2/local/org.eclipse.paho/java-parent/1.0.1/jars/java-parent.jar
+[debug] 	[SUCCESSFUL ] org.eclipse.paho#java-parent;1.0.1!java-parent.pom(pom.original) (1075ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.eclipse.paho/java-parent/1.0.1/jars/java-parent.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
@@ -1717,13 +1717,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
 [debug] 		tried http://repository.mapr.com/maven/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
-[debug] 		tried /home/sven/.ivy2/local/org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.0.1/eclipse-plugins/org.eclipse.paho.client.mqttv3.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/eclipse/paho/java-parent/1.0.1/java-parent-1.0.1.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.0.1/eclipse-plugins/org.eclipse.paho.client.mqttv3.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.jar
@@ -4235,7 +4235,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.apache.activemq#activemq-core;5.7.0 {test=[default(compile)]}
 [info] Resolving org.apache.activemq#activemq-core;5.7.0 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.activemq#activemq-core;5.7.0 {test=[default(compile)]}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq/activemq-core/5.7.0/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq/activemq-core/5.7.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.activemq#activemq-core;5.7.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.pom
 [debug] 	public: found md file for org.apache.activemq#activemq-core;5.7.0
@@ -4244,12 +4244,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.activemq#activemq-core;5.7.0!activemq-core.pom(pom.original) (1587ms)
+[debug] 	[SUCCESSFUL ] org.apache.activemq#activemq-core;5.7.0!activemq-core.pom(pom.original) (2298ms)
 [info] Resolving org.apache.activemq#activemq-parent;5.7.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.activemq#activemq-parent;5.7.0 {}
 [info] Resolving org.apache.activemq#activemq-parent;5.7.0 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.activemq#activemq-parent;5.7.0 {}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq/activemq-parent/5.7.0/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq/activemq-parent/5.7.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.activemq#activemq-parent;5.7.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.pom
 [debug] 	public: found md file for org.apache.activemq#activemq-parent;5.7.0
@@ -4258,11 +4258,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.activemq#activemq-parent;5.7.0!activemq-parent.pom(pom.original) (1853ms)
+[debug] 	[SUCCESSFUL ] org.apache.activemq#activemq-parent;5.7.0!activemq-parent.pom(pom.original) (2137ms)
 [info] Resolving org.apache#apache;11 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache#apache;11 {}
 [debug] sbt-chain: module revision found in cache: org.apache#apache;11
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq/activemq-parent/5.7.0/jars/activemq-parent.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq/activemq-parent/5.7.0/jars/activemq-parent.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
@@ -4276,13 +4276,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
 [debug] 		tried http://repository.mapr.com/maven/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq/activemq-core/5.7.0/bundles/activemq-core.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/activemq/activemq-parent/5.7.0/activemq-parent-5.7.0.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq/activemq-core/5.7.0/bundles/activemq-core.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.jar
 [debug] 	found org.apache.activemq#activemq-core;5.7.0 in public
 [debug] == resolving dependencies org.apache.spark#spark-streaming-mqtt_2.10;1.3.0->org.apache.activemq#activemq-core;5.7.0 [test->runtime]
@@ -4296,7 +4296,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom
 [debug] 	public: found md file for org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1
@@ -4305,12 +4305,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom
-[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1!geronimo-jms_1.1_spec.pom(pom.original) (1234ms)
+[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1!geronimo-jms_1.1_spec.pom(pom.original) (1139ms)
 [info] Resolving org.apache.geronimo.specs#specs;1.4 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.specs#specs;1.4 {}
 [info] Resolving org.apache.geronimo.specs#specs;1.4 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.geronimo.specs#specs;1.4 {}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.specs/specs/1.4/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.specs/specs/1.4/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.geronimo.specs#specs;1.4
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.pom
 [debug] 	public: found md file for org.apache.geronimo.specs#specs;1.4
@@ -4319,12 +4319,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.pom
-[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#specs;1.4!specs.pom(pom.original) (1237ms)
+[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#specs;1.4!specs.pom(pom.original) (2342ms)
 [info] Resolving org.apache.geronimo.genesis.config#project-config;1.2 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.genesis.config#project-config;1.2 {}
 [info] Resolving org.apache.geronimo.genesis.config#project-config;1.2 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.geronimo.genesis.config#project-config;1.2 {}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.genesis.config/project-config/1.2/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.genesis.config/project-config/1.2/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.geronimo.genesis.config#project-config;1.2
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.pom
 [debug] 	public: found md file for org.apache.geronimo.genesis.config#project-config;1.2
@@ -4333,12 +4333,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.pom
-[debug] 	[SUCCESSFUL ] org.apache.geronimo.genesis.config#project-config;1.2!project-config.pom(pom.original) (2759ms)
+[debug] 	[SUCCESSFUL ] org.apache.geronimo.genesis.config#project-config;1.2!project-config.pom(pom.original) (2814ms)
 [info] Resolving org.apache.geronimo.genesis.config#config;1.2 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.genesis.config#config;1.2 {}
 [info] Resolving org.apache.geronimo.genesis.config#config;1.2 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.geronimo.genesis.config#config;1.2 {}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.genesis.config/config/1.2/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.genesis.config/config/1.2/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.geronimo.genesis.config#config;1.2
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.pom
 [debug] 	public: found md file for org.apache.geronimo.genesis.config#config;1.2
@@ -4347,12 +4347,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.pom
-[debug] 	[SUCCESSFUL ] org.apache.geronimo.genesis.config#config;1.2!config.pom(pom.original) (1234ms)
+[debug] 	[SUCCESSFUL ] org.apache.geronimo.genesis.config#config;1.2!config.pom(pom.original) (1218ms)
 [info] Resolving org.apache.geronimo.genesis#genesis;1.2 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.genesis#genesis;1.2 {}
 [info] Resolving org.apache.geronimo.genesis#genesis;1.2 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.geronimo.genesis#genesis;1.2 {}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.genesis/genesis/1.2/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.genesis/genesis/1.2/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.geronimo.genesis#genesis;1.2
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.pom
 [debug] 	public: found md file for org.apache.geronimo.genesis#genesis;1.2
@@ -4361,11 +4361,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.pom
-[debug] 	[SUCCESSFUL ] org.apache.geronimo.genesis#genesis;1.2!genesis.pom(pom.original) (2808ms)
+[debug] 	[SUCCESSFUL ] org.apache.geronimo.genesis#genesis;1.2!genesis.pom(pom.original) (1537ms)
 [info] Resolving org.apache#apache;3 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache#apache;3 {}
 [debug] sbt-chain: module revision found in cache: org.apache#apache;3
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.genesis/genesis/1.2/jars/genesis.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.genesis/genesis/1.2/jars/genesis.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
@@ -4379,13 +4379,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
 [debug] 		tried http://repository.mapr.com/maven/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.genesis.config/config/1.2/jars/config.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.genesis.config/config/1.2/jars/config.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
@@ -4399,13 +4399,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
 [debug] 		tried http://repository.mapr.com/maven/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.genesis.config/project-config/1.2/jars/project-config.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/geronimo/genesis/config/config/1.2/config-1.2.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.genesis.config/project-config/1.2/jars/project-config.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
@@ -4419,13 +4419,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
 [debug] 		tried http://repository.mapr.com/maven/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.specs/specs/1.4/jars/specs.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.specs/specs/1.4/jars/specs.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
@@ -4439,27 +4439,27 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
 [debug] 		tried http://repository.mapr.com/maven/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1/jars/geronimo-jms_1.1_spec.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/geronimo/specs/specs/1.4/specs-1.4.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1/jars/geronimo-jms_1.1_spec.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar
 [debug] 	found org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 in public
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@2e2d3af
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@1819f84a
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@79b787a3
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@50fbcea2
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 [compile->runtime(*)]
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 [compile->compile]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@2a1cc3
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@43bb1737
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.activemq#kahadb;5.7.0 [compile->compile(*)]
 [info] Resolving org.apache.activemq#kahadb;5.7.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.activemq#kahadb;5.7.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.apache.activemq#kahadb;5.7.0 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.activemq#kahadb;5.7.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq/kahadb/5.7.0/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq/kahadb/5.7.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.activemq#kahadb;5.7.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.pom
 [debug] 	public: found md file for org.apache.activemq#kahadb;5.7.0
@@ -4468,11 +4468,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.activemq#kahadb;5.7.0!kahadb.pom(pom.original) (1815ms)
+[debug] 	[SUCCESSFUL ] org.apache.activemq#kahadb;5.7.0!kahadb.pom(pom.original) (1023ms)
 [info] Resolving org.apache.activemq#activemq-parent;5.7.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.activemq#activemq-parent;5.7.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.activemq#activemq-parent;5.7.0
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq/kahadb/5.7.0/bundles/kahadb.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq/kahadb/5.7.0/bundles/kahadb.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.jar
 [debug] 	found org.apache.activemq#kahadb;5.7.0 in public
 [debug] == resolving dependencies org.apache.activemq#kahadb;5.7.0->org.slf4j#slf4j-api;1.6.6 [compile->compile(*)]
@@ -4490,7 +4490,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.apache.activemq.protobuf#activemq-protobuf;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.apache.activemq.protobuf#activemq-protobuf;1.1 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.activemq.protobuf#activemq-protobuf;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq.protobuf/activemq-protobuf/1.1/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq.protobuf/activemq-protobuf/1.1/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.activemq.protobuf#activemq-protobuf;1.1
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.pom
 [debug] 	public: found md file for org.apache.activemq.protobuf#activemq-protobuf;1.1
@@ -4499,12 +4499,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.pom
-[debug] 	[SUCCESSFUL ] org.apache.activemq.protobuf#activemq-protobuf;1.1!activemq-protobuf.pom(pom.original) (1228ms)
+[debug] 	[SUCCESSFUL ] org.apache.activemq.protobuf#activemq-protobuf;1.1!activemq-protobuf.pom(pom.original) (1363ms)
 [info] Resolving org.apache.activemq.protobuf#activemq-protobuf-pom;1.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.activemq.protobuf#activemq-protobuf-pom;1.1 {}
 [info] Resolving org.apache.activemq.protobuf#activemq-protobuf-pom;1.1 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.activemq.protobuf#activemq-protobuf-pom;1.1 {}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq.protobuf/activemq-protobuf-pom/1.1/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq.protobuf/activemq-protobuf-pom/1.1/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.activemq.protobuf#activemq-protobuf-pom;1.1
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.pom
 [debug] 	public: found md file for org.apache.activemq.protobuf#activemq-protobuf-pom;1.1
@@ -4513,12 +4513,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.pom
-[debug] 	[SUCCESSFUL ] org.apache.activemq.protobuf#activemq-protobuf-pom;1.1!activemq-protobuf-pom.pom(pom.original) (3491ms)
+[debug] 	[SUCCESSFUL ] org.apache.activemq.protobuf#activemq-protobuf-pom;1.1!activemq-protobuf-pom.pom(pom.original) (1128ms)
 [info] Resolving org.apache#apache;6 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache#apache;6 {}
 [info] Resolving org.apache#apache;6 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache#apache;6 {}
-[debug] 		tried /home/sven/.ivy2/local/org.apache/apache/6/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache/apache/6/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache#apache;6
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/apache/6/apache-6.pom
 [debug] 	public: found md file for org.apache#apache;6
@@ -4527,8 +4527,8 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/apache/6/apache-6.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/apache/6/apache-6.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/apache/6/apache-6.pom
-[debug] 	[SUCCESSFUL ] org.apache#apache;6!apache.pom(pom.original) (1833ms)
-[debug] 		tried /home/sven/.ivy2/local/org.apache/apache/6/jars/apache.jar
+[debug] 	[SUCCESSFUL ] org.apache#apache;6!apache.pom(pom.original) (1229ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache/apache/6/jars/apache.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/apache/6/apache-6.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/apache/6/apache-6.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/apache/6/apache-6.jar
@@ -4542,13 +4542,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/apache/6/apache-6.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/apache/6/apache-6.jar
 [debug] 		tried http://repository.mapr.com/maven/org/apache/apache/6/apache-6.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/apache/apache/6/apache-6.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/apache/apache/6/apache-6.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/apache/6/apache-6.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/apache/apache/6/apache-6.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/apache/6/apache-6.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/apache/apache/6/apache-6.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/apache/6/apache-6.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/apache/apache/6/apache-6.jar
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq.protobuf/activemq-protobuf-pom/1.1/jars/activemq-protobuf-pom.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/apache/6/apache-6.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq.protobuf/activemq-protobuf-pom/1.1/jars/activemq-protobuf-pom.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
@@ -4562,13 +4562,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
 [debug] 		tried http://repository.mapr.com/maven/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
-[debug] 		tried /home/sven/.ivy2/local/org.apache.activemq.protobuf/activemq-protobuf/1.1/maven-plugins/activemq-protobuf.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.activemq.protobuf/activemq-protobuf/1.1/maven-plugins/activemq-protobuf.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.jar
 [debug] 	found org.apache.activemq.protobuf#activemq-protobuf;1.1 in public
 [debug] dependency descriptor has been mediated: dependency: junit#junit;4.4 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]}
@@ -4582,7 +4582,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource.mqtt-client#mqtt-client;1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.fusesource.mqtt-client#mqtt-client;1.3 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.fusesource.mqtt-client#mqtt-client;1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.mqtt-client/mqtt-client/1.3/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.mqtt-client/mqtt-client/1.3/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.fusesource.mqtt-client#mqtt-client;1.3
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.pom
 [debug] 	public: found md file for org.fusesource.mqtt-client#mqtt-client;1.3
@@ -4591,12 +4591,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.pom
-[debug] 	[SUCCESSFUL ] org.fusesource.mqtt-client#mqtt-client;1.3!mqtt-client.pom(pom.original) (5046ms)
+[debug] 	[SUCCESSFUL ] org.fusesource.mqtt-client#mqtt-client;1.3!mqtt-client.pom(pom.original) (1217ms)
 [info] Resolving org.fusesource.mqtt-client#mqtt-client-project;1.3 ...
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource.mqtt-client#mqtt-client-project;1.3 {}
 [info] Resolving org.fusesource.mqtt-client#mqtt-client-project;1.3 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.fusesource.mqtt-client#mqtt-client-project;1.3 {}
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.mqtt-client/mqtt-client-project/1.3/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.mqtt-client/mqtt-client-project/1.3/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.fusesource.mqtt-client#mqtt-client-project;1.3
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.pom
 [debug] 	public: found md file for org.fusesource.mqtt-client#mqtt-client-project;1.3
@@ -4605,12 +4605,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.pom
-[debug] 	[SUCCESSFUL ] org.fusesource.mqtt-client#mqtt-client-project;1.3!mqtt-client-project.pom(pom.original) (1888ms)
+[debug] 	[SUCCESSFUL ] org.fusesource.mqtt-client#mqtt-client-project;1.3!mqtt-client-project.pom(pom.original) (2362ms)
 [info] Resolving org.fusesource#fusesource-pom;1.9 ...
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource#fusesource-pom;1.9 {}
 [info] Resolving org.fusesource#fusesource-pom;1.9 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.fusesource#fusesource-pom;1.9 {}
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource/fusesource-pom/1.9/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource/fusesource-pom/1.9/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.fusesource#fusesource-pom;1.9
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.pom
 [debug] 	public: found md file for org.fusesource#fusesource-pom;1.9
@@ -4619,8 +4619,8 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.pom
-[debug] 	[SUCCESSFUL ] org.fusesource#fusesource-pom;1.9!fusesource-pom.pom(pom.original) (2618ms)
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource/fusesource-pom/1.9/jars/fusesource-pom.jar
+[debug] 	[SUCCESSFUL ] org.fusesource#fusesource-pom;1.9!fusesource-pom.pom(pom.original) (2387ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource/fusesource-pom/1.9/jars/fusesource-pom.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
@@ -4634,13 +4634,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
 [debug] 		tried http://repository.mapr.com/maven/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.mqtt-client/mqtt-client-project/1.3/jars/mqtt-client-project.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.mqtt-client/mqtt-client-project/1.3/jars/mqtt-client-project.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
@@ -4654,13 +4654,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
 [debug] 		tried http://repository.mapr.com/maven/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.mqtt-client/mqtt-client/1.3/bundles/mqtt-client.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/fusesource/mqtt-client/mqtt-client-project/1.3/mqtt-client-project-1.3.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.mqtt-client/mqtt-client/1.3/bundles/mqtt-client.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.jar
 [debug] 	found org.fusesource.mqtt-client#mqtt-client;1.3 in public
 [debug] dependency descriptor has been mediated: dependency: org.eclipse.jetty.aggregate#jetty-all-server;7.1.6.v20100715 {test=[runtime(*), master(compile)]} => dependency: org.eclipse.jetty.aggregate#jetty-all-server;7.6.7.v20120910 {test=[runtime(*), master(compile)]}
@@ -4683,7 +4683,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource.hawtdispatch#hawtdispatch-transport;1.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.fusesource.hawtdispatch#hawtdispatch-transport;1.11 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.fusesource.hawtdispatch#hawtdispatch-transport;1.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch-transport/1.11/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch-transport/1.11/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.fusesource.hawtdispatch#hawtdispatch-transport;1.11
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.pom
 [debug] 	public: found md file for org.fusesource.hawtdispatch#hawtdispatch-transport;1.11
@@ -4692,12 +4692,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.pom
-[debug] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch-transport;1.11!hawtdispatch-transport.pom(pom.original) (2058ms)
+[debug] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch-transport;1.11!hawtdispatch-transport.pom(pom.original) (7276ms)
 [info] Resolving org.fusesource.hawtdispatch#hawtdispatch-project;1.11 ...
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource.hawtdispatch#hawtdispatch-project;1.11 {}
 [info] Resolving org.fusesource.hawtdispatch#hawtdispatch-project;1.11 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.fusesource.hawtdispatch#hawtdispatch-project;1.11 {}
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch-project/1.11/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch-project/1.11/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.fusesource.hawtdispatch#hawtdispatch-project;1.11
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.pom
 [debug] 	public: found md file for org.fusesource.hawtdispatch#hawtdispatch-project;1.11
@@ -4706,17 +4706,17 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.pom
-[debug] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch-project;1.11!hawtdispatch-project.pom(pom.original) (5046ms)
+[debug] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch-project;1.11!hawtdispatch-project.pom(pom.original) (1321ms)
 [info] Resolving org.fusesource#fusesource-pom;1.9 ...
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource#fusesource-pom;1.9 {}
 [debug] sbt-chain: module revision found in cache: org.fusesource#fusesource-pom;1.9
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch-project/1.11/jars/hawtdispatch-project.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch-project/1.11/jars/hawtdispatch-project.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] 		tried https://repository.apache.org/content/repositories/releases/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
-[error] Server access Error: Remote host closed connection during handshake url=https://repository.apache.org/content/repositories/releases/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
@@ -4724,13 +4724,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] 		tried http://repository.mapr.com/maven/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch-transport/1.11/bundles/hawtdispatch-transport.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch-project/1.11/hawtdispatch-project-1.11.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch-transport/1.11/bundles/hawtdispatch-transport.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.jar
 [debug] 	found org.fusesource.hawtdispatch#hawtdispatch-transport;1.11 in public
 [debug] dependency descriptor has been mediated: dependency: junit#junit;4.7 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]}
@@ -4758,7 +4758,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource.hawtdispatch#hawtdispatch;1.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.fusesource.hawtdispatch#hawtdispatch;1.11 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.fusesource.hawtdispatch#hawtdispatch;1.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch/1.11/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch/1.11/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.fusesource.hawtdispatch#hawtdispatch;1.11
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.pom
 [debug] 	public: found md file for org.fusesource.hawtdispatch#hawtdispatch;1.11
@@ -4767,11 +4767,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.pom
-[debug] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch;1.11!hawtdispatch.pom(pom.original) (2092ms)
+[debug] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch;1.11!hawtdispatch.pom(pom.original) (1095ms)
 [info] Resolving org.fusesource.hawtdispatch#hawtdispatch-project;1.11 ...
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource.hawtdispatch#hawtdispatch-project;1.11 {}
 [debug] sbt-chain: module revision found in cache: org.fusesource.hawtdispatch#hawtdispatch-project;1.11
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch/1.11/bundles/hawtdispatch.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtdispatch/hawtdispatch/1.11/bundles/hawtdispatch.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.jar
 [debug] 	found org.fusesource.hawtdispatch#hawtdispatch;1.11 in public
 [debug] dependency descriptor has been mediated: dependency: junit#junit;4.7 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]}
@@ -4799,7 +4799,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource.hawtbuf#hawtbuf;1.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.fusesource.hawtbuf#hawtbuf;1.9 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.fusesource.hawtbuf#hawtbuf;1.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtbuf/hawtbuf/1.9/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtbuf/hawtbuf/1.9/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.fusesource.hawtbuf#hawtbuf;1.9
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.pom
 [debug] 	public: found md file for org.fusesource.hawtbuf#hawtbuf;1.9
@@ -4808,12 +4808,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.pom
-[debug] 	[SUCCESSFUL ] org.fusesource.hawtbuf#hawtbuf;1.9!hawtbuf.pom(pom.original) (2290ms)
+[debug] 	[SUCCESSFUL ] org.fusesource.hawtbuf#hawtbuf;1.9!hawtbuf.pom(pom.original) (1043ms)
 [info] Resolving org.fusesource.hawtbuf#hawtbuf-project;1.9 ...
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource.hawtbuf#hawtbuf-project;1.9 {}
 [info] Resolving org.fusesource.hawtbuf#hawtbuf-project;1.9 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.fusesource.hawtbuf#hawtbuf-project;1.9 {}
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtbuf/hawtbuf-project/1.9/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtbuf/hawtbuf-project/1.9/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.fusesource.hawtbuf#hawtbuf-project;1.9
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.pom
 [debug] 	public: found md file for org.fusesource.hawtbuf#hawtbuf-project;1.9
@@ -4822,11 +4822,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.pom
-[debug] 	[SUCCESSFUL ] org.fusesource.hawtbuf#hawtbuf-project;1.9!hawtbuf-project.pom(pom.original) (15244ms)
+[debug] 	[SUCCESSFUL ] org.fusesource.hawtbuf#hawtbuf-project;1.9!hawtbuf-project.pom(pom.original) (1292ms)
 [info] Resolving org.fusesource#fusesource-pom;1.9 ...
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource#fusesource-pom;1.9 {}
 [debug] sbt-chain: module revision found in cache: org.fusesource#fusesource-pom;1.9
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtbuf/hawtbuf-project/1.9/jars/hawtbuf-project.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtbuf/hawtbuf-project/1.9/jars/hawtbuf-project.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
@@ -4840,13 +4840,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
 [debug] 		tried http://repository.mapr.com/maven/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
-[debug] 		tried /home/sven/.ivy2/local/org.fusesource.hawtbuf/hawtbuf/1.9/bundles/hawtbuf.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/fusesource/hawtbuf/hawtbuf-project/1.9/hawtbuf-project-1.9.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.fusesource.hawtbuf/hawtbuf/1.9/bundles/hawtbuf.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar
 [debug] 	found org.fusesource.hawtbuf#hawtbuf;1.9 in public
 [debug] dependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1 {optional=[compile(*), master(compile)]} => dependency: commons-logging#commons-logging;1.1.1 {optional=[compile(*), master(compile)]}
@@ -4883,7 +4883,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/1.0.1/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/1.0.1/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.pom
 [debug] 	public: found md file for org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1
@@ -4892,25 +4892,25 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.pom
-[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1!geronimo-j2ee-management_1.1_spec.pom(pom.original) (2112ms)
+[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1!geronimo-j2ee-management_1.1_spec.pom(pom.original) (1217ms)
 [info] Resolving org.apache.geronimo.specs#specs;1.4 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.specs#specs;1.4 {}
 [debug] sbt-chain: module revision found in cache: org.apache.geronimo.specs#specs;1.4
-[debug] 		tried /home/sven/.ivy2/local/org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/1.0.1/jars/geronimo-j2ee-management_1.1_spec.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/1.0.1/jars/geronimo-j2ee-management_1.1_spec.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar
 [debug] 	found org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 in public
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@1f0faaef
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@398922db
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@3d9f40d7
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@5a4f755f
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 [compile->runtime(*)]
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 [compile->compile]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@225a02dc
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@16a2de4b
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.springframework#spring-context;3.0.7.RELEASE [compile->compile(*)]
 [info] Resolving org.springframework#spring-context;3.0.7.RELEASE ...
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-context;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.springframework#spring-context;3.0.7.RELEASE ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.springframework#spring-context;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-context/3.0.7.RELEASE/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-context/3.0.7.RELEASE/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.springframework#spring-context;3.0.7.RELEASE
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.pom
 [debug] 	public: found md file for org.springframework#spring-context;3.0.7.RELEASE
@@ -4919,12 +4919,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.pom
-[debug] 	[SUCCESSFUL ] org.springframework#spring-context;3.0.7.RELEASE!spring-context.pom(pom.original) (2476ms)
+[debug] 	[SUCCESSFUL ] org.springframework#spring-context;3.0.7.RELEASE!spring-context.pom(pom.original) (1126ms)
 [info] Resolving org.springframework#spring-parent;3.0.7.RELEASE ...
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-parent;3.0.7.RELEASE {}
 [info] Resolving org.springframework#spring-parent;3.0.7.RELEASE ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.springframework#spring-parent;3.0.7.RELEASE {}
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-parent/3.0.7.RELEASE/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-parent/3.0.7.RELEASE/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.springframework#spring-parent;3.0.7.RELEASE
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.pom
 [debug] 	public: found md file for org.springframework#spring-parent;3.0.7.RELEASE
@@ -4933,8 +4933,8 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.pom
-[debug] 	[SUCCESSFUL ] org.springframework#spring-parent;3.0.7.RELEASE!spring-parent.pom(pom.original) (1648ms)
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-parent/3.0.7.RELEASE/jars/spring-parent.jar
+[debug] 	[SUCCESSFUL ] org.springframework#spring-parent;3.0.7.RELEASE!spring-parent.pom(pom.original) (1084ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-parent/3.0.7.RELEASE/jars/spring-parent.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
@@ -4948,13 +4948,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
 [debug] 		tried http://repository.mapr.com/maven/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-context/3.0.7.RELEASE/jars/spring-context.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/springframework/spring-parent/3.0.7.RELEASE/spring-parent-3.0.7.RELEASE.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-context/3.0.7.RELEASE/jars/spring-context.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.jar
 [debug] 	found org.springframework#spring-context;3.0.7.RELEASE in public
 [debug] dependency descriptor has been mediated: dependency: org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1 {optional=[compile(*), master(compile)]} => dependency: org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 {optional=[compile(*), master(compile)]}
@@ -5015,7 +5015,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-aop;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.springframework#spring-aop;3.0.7.RELEASE ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.springframework#spring-aop;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-aop/3.0.7.RELEASE/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-aop/3.0.7.RELEASE/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.springframework#spring-aop;3.0.7.RELEASE
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.pom
 [debug] 	public: found md file for org.springframework#spring-aop;3.0.7.RELEASE
@@ -5024,11 +5024,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.pom
-[debug] 	[SUCCESSFUL ] org.springframework#spring-aop;3.0.7.RELEASE!spring-aop.pom(pom.original) (2633ms)
+[debug] 	[SUCCESSFUL ] org.springframework#spring-aop;3.0.7.RELEASE!spring-aop.pom(pom.original) (2445ms)
 [info] Resolving org.springframework#spring-parent;3.0.7.RELEASE ...
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-parent;3.0.7.RELEASE {}
 [debug] sbt-chain: module revision found in cache: org.springframework#spring-parent;3.0.7.RELEASE
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-aop/3.0.7.RELEASE/jars/spring-aop.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-aop/3.0.7.RELEASE/jars/spring-aop.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.jar
 [debug] 	found org.springframework#spring-aop;3.0.7.RELEASE in public
 [debug] dependency descriptor has been mediated: dependency: commons-pool#commons-pool;1.5.3 {optional=[compile(*), master(compile)]} => dependency: commons-pool#commons-pool;1.6 {optional=[compile(*), master(compile)]}
@@ -5095,7 +5095,7 @@
 [debug] sbt-chain: Checking cache for: dependency: aopalliance#aopalliance;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving aopalliance#aopalliance;1.0 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: aopalliance#aopalliance;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/aopalliance/aopalliance/1.0/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/aopalliance/aopalliance/1.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for aopalliance#aopalliance;1.0
 [debug] 		tried https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
 [debug] 	public: found md file for aopalliance#aopalliance;1.0
@@ -5104,8 +5104,8 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
-[debug] 	[SUCCESSFUL ] aopalliance#aopalliance;1.0!aopalliance.pom(pom.original) (1766ms)
-[debug] 		tried /home/sven/.ivy2/local/aopalliance/aopalliance/1.0/jars/aopalliance.jar
+[debug] 	[SUCCESSFUL ] aopalliance#aopalliance;1.0!aopalliance.pom(pom.original) (1115ms)
+[debug] 		tried /home/qiniu/.ivy2/local/aopalliance/aopalliance/1.0/jars/aopalliance.jar
 [debug] 		tried https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
 [debug] 	found aopalliance#aopalliance;1.0 in public
 [debug] == resolving dependencies org.springframework#spring-aop;3.0.7.RELEASE->aopalliance#aopalliance;1.0 [compile->master(compile)]
@@ -5170,7 +5170,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-asm;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.springframework#spring-asm;3.0.7.RELEASE ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.springframework#spring-asm;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-asm/3.0.7.RELEASE/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-asm/3.0.7.RELEASE/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.springframework#spring-asm;3.0.7.RELEASE
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.pom
 [debug] 	public: found md file for org.springframework#spring-asm;3.0.7.RELEASE
@@ -5179,11 +5179,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.pom
-[debug] 	[SUCCESSFUL ] org.springframework#spring-asm;3.0.7.RELEASE!spring-asm.pom(pom.original) (1721ms)
+[debug] 	[SUCCESSFUL ] org.springframework#spring-asm;3.0.7.RELEASE!spring-asm.pom(pom.original) (1129ms)
 [info] Resolving org.springframework#spring-parent;3.0.7.RELEASE ...
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-parent;3.0.7.RELEASE {}
 [debug] sbt-chain: module revision found in cache: org.springframework#spring-parent;3.0.7.RELEASE
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-asm/3.0.7.RELEASE/jars/spring-asm.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-asm/3.0.7.RELEASE/jars/spring-asm.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.jar
 [debug] 	found org.springframework#spring-asm;3.0.7.RELEASE in public
 [debug] == resolving dependencies org.springframework#spring-aop;3.0.7.RELEASE->org.springframework#spring-asm;3.0.7.RELEASE [compile->master(compile)]
@@ -5248,7 +5248,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-beans;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.springframework#spring-beans;3.0.7.RELEASE ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.springframework#spring-beans;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-beans/3.0.7.RELEASE/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-beans/3.0.7.RELEASE/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.springframework#spring-beans;3.0.7.RELEASE
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.pom
 [debug] 	public: found md file for org.springframework#spring-beans;3.0.7.RELEASE
@@ -5257,11 +5257,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.pom
-[debug] 	[SUCCESSFUL ] org.springframework#spring-beans;3.0.7.RELEASE!spring-beans.pom(pom.original) (1189ms)
+[debug] 	[SUCCESSFUL ] org.springframework#spring-beans;3.0.7.RELEASE!spring-beans.pom(pom.original) (1831ms)
 [info] Resolving org.springframework#spring-parent;3.0.7.RELEASE ...
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-parent;3.0.7.RELEASE {}
 [debug] sbt-chain: module revision found in cache: org.springframework#spring-parent;3.0.7.RELEASE
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-beans/3.0.7.RELEASE/jars/spring-beans.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-beans/3.0.7.RELEASE/jars/spring-beans.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.jar
 [debug] 	found org.springframework#spring-beans;3.0.7.RELEASE in public
 [debug] dependency descriptor has been mediated: dependency: log4j#log4j;1.2.15 {test=[runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {test=[runtime(*), master(compile)]}
@@ -5333,7 +5333,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-core;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.springframework#spring-core;3.0.7.RELEASE ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.springframework#spring-core;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-core/3.0.7.RELEASE/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-core/3.0.7.RELEASE/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.springframework#spring-core;3.0.7.RELEASE
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.pom
 [debug] 	public: found md file for org.springframework#spring-core;3.0.7.RELEASE
@@ -5342,11 +5342,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.pom
-[debug] 	[SUCCESSFUL ] org.springframework#spring-core;3.0.7.RELEASE!spring-core.pom(pom.original) (925ms)
+[debug] 	[SUCCESSFUL ] org.springframework#spring-core;3.0.7.RELEASE!spring-core.pom(pom.original) (1212ms)
 [info] Resolving org.springframework#spring-parent;3.0.7.RELEASE ...
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-parent;3.0.7.RELEASE {}
 [debug] sbt-chain: module revision found in cache: org.springframework#spring-parent;3.0.7.RELEASE
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-core/3.0.7.RELEASE/jars/spring-core.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-core/3.0.7.RELEASE/jars/spring-core.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.jar
 [debug] 	found org.springframework#spring-core;3.0.7.RELEASE in public
 [debug] dependency descriptor has been mediated: dependency: commons-collections#commons-collections;3.2 {optional=[compile(*), master(compile)]} => dependency: commons-collections#commons-collections;3.2.1 {optional=[compile(*), master(compile)]}
@@ -5508,7 +5508,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-expression;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.springframework#spring-expression;3.0.7.RELEASE ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.springframework#spring-expression;3.0.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-expression/3.0.7.RELEASE/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-expression/3.0.7.RELEASE/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.springframework#spring-expression;3.0.7.RELEASE
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.pom
 [debug] 	public: found md file for org.springframework#spring-expression;3.0.7.RELEASE
@@ -5517,11 +5517,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.pom
-[debug] 	[SUCCESSFUL ] org.springframework#spring-expression;3.0.7.RELEASE!spring-expression.pom(pom.original) (1147ms)
+[debug] 	[SUCCESSFUL ] org.springframework#spring-expression;3.0.7.RELEASE!spring-expression.pom(pom.original) (1143ms)
 [info] Resolving org.springframework#spring-parent;3.0.7.RELEASE ...
 [debug] sbt-chain: Checking cache for: dependency: org.springframework#spring-parent;3.0.7.RELEASE {}
 [debug] sbt-chain: module revision found in cache: org.springframework#spring-parent;3.0.7.RELEASE
-[debug] 		tried /home/sven/.ivy2/local/org.springframework/spring-expression/3.0.7.RELEASE/jars/spring-expression.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.springframework/spring-expression/3.0.7.RELEASE/jars/spring-expression.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.jar
 [debug] 	found org.springframework#spring-expression;3.0.7.RELEASE in public
 [debug] dependency descriptor has been mediated: dependency: log4j#log4j;1.2.15 {test=[runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {test=[runtime(*), master(compile)]}
@@ -5595,7 +5595,7 @@
 [debug] sbt-chain: Checking cache for: dependency: commons-net#commons-net;3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving commons-net#commons-net;3.1 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: commons-net#commons-net;3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/commons-net/commons-net/3.1/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/commons-net/commons-net/3.1/ivys/ivy.xml
 [debug] 	local: no ivy file found for commons-net#commons-net;3.1
 [debug] 		tried https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.pom
 [debug] 	public: found md file for commons-net#commons-net;3.1
@@ -5604,12 +5604,12 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.pom
-[debug] 	[SUCCESSFUL ] commons-net#commons-net;3.1!commons-net.pom(pom.original) (1780ms)
+[debug] 	[SUCCESSFUL ] commons-net#commons-net;3.1!commons-net.pom(pom.original) (1512ms)
 [info] Resolving org.apache.commons#commons-parent;23 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;23 {}
 [info] Resolving org.apache.commons#commons-parent;23 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-parent;23 {}
-[debug] 		tried /home/sven/.ivy2/local/org.apache.commons/commons-parent/23/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.commons/commons-parent/23/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.commons#commons-parent;23
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/23/commons-parent-23.pom
 [debug] 	public: found md file for org.apache.commons#commons-parent;23
@@ -5618,11 +5618,11 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/23/commons-parent-23.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/23/commons-parent-23.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-parent/23/commons-parent-23.pom
-[debug] 	[SUCCESSFUL ] org.apache.commons#commons-parent;23!commons-parent.pom(pom.original) (5112ms)
+[debug] 	[SUCCESSFUL ] org.apache.commons#commons-parent;23!commons-parent.pom(pom.original) (2112ms)
 [info] Resolving org.apache#apache;9 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache#apache;9 {}
 [debug] sbt-chain: module revision found in cache: org.apache#apache;9
-[debug] 		tried /home/sven/.ivy2/local/org.apache.commons/commons-parent/23/jars/commons-parent.jar
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.commons/commons-parent/23/jars/commons-parent.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/23/commons-parent-23.jar
 [debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/commons/commons-parent/23/commons-parent-23.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/23/commons-parent-23.jar
@@ -5636,13 +5636,13 @@
 [debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/commons/commons-parent/23/commons-parent-23.jar
 [debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/commons/commons-parent/23/commons-parent-23.jar
 [debug] 		tried http://repository.mapr.com/maven/org/apache/commons/commons-parent/23/commons-parent-23.jar
-[debug] CLIENT ERROR: Item not found for request "ResourceStoreRequest(requestPath="/org/apache/commons/commons-parent/23/commons-parent-23.jar")" in repository ""MapR Public Repository" [id=mapr-public]"! url=http://repository.mapr.com/maven/org/apache/commons/commons-parent/23/commons-parent-23.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/commons/commons-parent/23/commons-parent-23.jar
 [debug] 		tried https://repo.spring.io/libs-release/org/apache/commons/commons-parent/23/commons-parent-23.jar
 [debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/commons/commons-parent/23/commons-parent-23.jar
 [debug] 		tried http://repository.apache.org/snapshots/org/apache/commons/commons-parent/23/commons-parent-23.jar
 [debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/commons/commons-parent/23/commons-parent-23.jar
-[debug] 		tried file:/home/sven/.m2/repository/org/apache/commons/commons-parent/23/commons-parent-23.jar
-[debug] 		tried /home/sven/.ivy2/local/commons-net/commons-net/3.1/jars/commons-net.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/commons/commons-parent/23/commons-parent-23.jar
+[debug] 		tried /home/qiniu/.ivy2/local/commons-net/commons-net/3.1/jars/commons-net.jar
 [debug] 		tried https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.jar
 [debug] 	found commons-net#commons-net;3.1 in public
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->commons-net#commons-net;3.1 [compile->master(compile)]
@@ -5659,7 +5659,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.jasypt#jasypt;1.9.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.jasypt#jasypt;1.9.0 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.jasypt#jasypt;1.9.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /home/sven/.ivy2/local/org.jasypt/jasypt/1.9.0/ivys/ivy.xml
+[debug] 		tried /home/qiniu/.ivy2/local/org.jasypt/jasypt/1.9.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.jasypt#jasypt;1.9.0
 [debug] 		tried https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.pom
 [debug] 	public: found md file for org.jasypt#jasypt;1.9.0
@@ -5668,8 +5668,8 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.pom
-[debug] 	[SUCCESSFUL ] org.jasypt#jasypt;1.9.0!jasypt.pom(pom.original) (917ms)
-[debug] 		tried /home/sven/.ivy2/local/org.jasypt/jasypt/1.9.0/jars/jasypt.jar
+[debug] 	[SUCCESSFUL ] org.jasypt#jasypt;1.9.0!jasypt.pom(pom.original) (2549ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.jasypt/jasypt/1.9.0/jars/jasypt.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.jar
 [debug] 	found org.jasypt#jasypt;1.9.0 in public
 [debug] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]}
@@ -9482,9 +9482,9 @@
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.slf4j#slf4j-api;1.6.6 [compile->master(compile)]
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)]
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 [compile->compile(*)]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@420afa78
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@ceba63d
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@5ec1fe27
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@42eef56b
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.activemq#kahadb;5.7.0 [compile->compile(*)]
 [debug] == resolving dependencies org.apache.activemq#kahadb;5.7.0->org.slf4j#slf4j-api;1.6.6 [compile->compile(*)]
 [debug] == resolving dependencies org.apache.activemq#kahadb;5.7.0->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)]
@@ -9566,9 +9566,9 @@
 [debug] dependency descriptor has been mediated: dependency: junit#junit;4.7 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.slf4j#slf4j-log4j12;1.6.1 {test=[runtime(*), master(compile)]} => dependency: org.slf4j#slf4j-log4j12;1.6.6 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 [compile->compile(*)]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@3d20b3d
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@77a19741
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@52dfd3c0
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@11d169c3
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.springframework#spring-context;3.0.7.RELEASE [compile->compile(*)]
 [debug] dependency descriptor has been mediated: dependency: org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1 {optional=[compile(*), master(compile)]} => dependency: org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 {optional=[compile(*), master(compile)]}
 [debug] dependency descriptor has been mediated: dependency: commons-pool#commons-pool;1.5.3 {test=[runtime(*), master(compile)]} => dependency: commons-pool#commons-pool;1.6 {test=[runtime(*), master(compile)]}
@@ -10071,7 +10071,7 @@
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.slf4j#slf4j-api;1.7.10 [runtime->compile]
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 [runtime->compile]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@4a3774ec
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@b3ae1c1
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.activemq#kahadb;5.7.0 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.activemq#kahadb;5.7.0 [runtime->compile]
 [debug] == resolving dependencies org.apache.activemq#kahadb;5.7.0->org.slf4j#slf4j-api;1.6.6 [runtime->runtime(*)]
@@ -10100,7 +10100,7 @@
 [debug] dependency descriptor has been mediated: dependency: log4j#log4j;1.2.14 {test=[runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 [runtime->compile]
-[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@13dcc469 => sbt.ivyint.MergedDescriptors@27a05db9
+[debug] dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@70713432 => sbt.ivyint.MergedDescriptors@5a06e64
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.springframework#spring-context;3.0.7.RELEASE [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.activemq#activemq-core;5.7.0->org.springframework#spring-context;3.0.7.RELEASE [runtime->compile]
 [debug] dependency descriptor has been mediated: dependency: org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1 {optional=[compile(*), master(compile)]} => dependency: org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 {optional=[compile(*), master(compile)]}
@@ -10261,7 +10261,7 @@
 [debug] 	mqtt-repo: downloading https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.jar
 [debug] 	mqtt-repo: downloading https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.jar.sha1
 [debug] sha1 OK for https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.1/org.eclipse.paho.client.mqttv3-1.0.1.jar
-[info] 	[SUCCESSFUL ] org.eclipse.paho#org.eclipse.paho.client.mqttv3;1.0.1!org.eclipse.paho.client.mqttv3.jar(eclipse-plugin) (20504ms)
+[info] 	[SUCCESSFUL ] org.eclipse.paho#org.eclipse.paho.client.mqttv3;1.0.1!org.eclipse.paho.client.mqttv3.jar(eclipse-plugin) (11020ms)
 [debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar
 [debug] 	[NOT REQUIRED] com.google.guava#guava;14.0.1!guava.jar(bundle)
 [debug] 	[NOT REQUIRED] com.twitter#chill_2.10;0.5.0!chill_2.10.jar
@@ -10361,7 +10361,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.jar
-[info] 	[SUCCESSFUL ] org.apache.activemq#activemq-core;5.7.0!activemq-core.jar(bundle) (37880ms)
+[info] 	[SUCCESSFUL ] org.apache.activemq#activemq-core;5.7.0!activemq-core.jar(bundle) (55386ms)
 [debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.10;2.2.1!scalatest_2.10.jar(bundle)
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar
@@ -10372,120 +10372,120 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar
-[info] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1!geronimo-jms_1.1_spec.jar (1211ms)
+[info] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1!geronimo-jms_1.1_spec.jar (1493ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.jar
 [info] downloading https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/activemq/kahadb/5.7.0/kahadb-5.7.0.jar
-[info] 	[SUCCESSFUL ] org.apache.activemq#kahadb;5.7.0!kahadb.jar(bundle) (2067ms)
+[info] 	[SUCCESSFUL ] org.apache.activemq#kahadb;5.7.0!kahadb.jar(bundle) (2150ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.jar
 [info] downloading https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.jar
-[info] 	[SUCCESSFUL ] org.apache.activemq.protobuf#activemq-protobuf;1.1!activemq-protobuf.jar(maven-plugin) (2363ms)
+[info] 	[SUCCESSFUL ] org.apache.activemq.protobuf#activemq-protobuf;1.1!activemq-protobuf.jar(maven-plugin) (2012ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.jar
 [info] downloading https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.3/mqtt-client-1.3.jar
-[info] 	[SUCCESSFUL ] org.fusesource.mqtt-client#mqtt-client;1.3!mqtt-client.jar(bundle) (3790ms)
+[info] 	[SUCCESSFUL ] org.fusesource.mqtt-client#mqtt-client;1.3!mqtt-client.jar(bundle) (1637ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar
 [info] downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar
-[info] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1!geronimo-j2ee-management_1.1_spec.jar (1580ms)
+[info] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1!geronimo-j2ee-management_1.1_spec.jar (1160ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.jar
 [info] downloading https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.jar
-[info] 	[SUCCESSFUL ] org.springframework#spring-context;3.0.7.RELEASE!spring-context.jar (8321ms)
+[info] 	[SUCCESSFUL ] org.springframework#spring-context;3.0.7.RELEASE!spring-context.jar (10352ms)
 [debug] 		tried https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.jar
 [info] downloading https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.jar
-[info] 	[SUCCESSFUL ] commons-net#commons-net;3.1!commons-net.jar (6021ms)
+[info] 	[SUCCESSFUL ] commons-net#commons-net;3.1!commons-net.jar (3159ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.jar
 [info] downloading https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.0/jasypt-1.9.0.jar
-[info] 	[SUCCESSFUL ] org.jasypt#jasypt;1.9.0!jasypt.jar (1863ms)
+[info] 	[SUCCESSFUL ] org.jasypt#jasypt;1.9.0!jasypt.jar (1842ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.jar
 [info] downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.11/hawtdispatch-transport-1.11.jar
-[info] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch-transport;1.11!hawtdispatch-transport.jar(bundle) (1332ms)
+[info] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch-transport;1.11!hawtdispatch-transport.jar(bundle) (1842ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar
 [info] downloading https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar
-[info] 	[SUCCESSFUL ] org.fusesource.hawtbuf#hawtbuf;1.9!hawtbuf.jar(bundle) (1036ms)
+[info] 	[SUCCESSFUL ] org.fusesource.hawtbuf#hawtbuf;1.9!hawtbuf.jar(bundle) (1638ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.jar
 [info] downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.11/hawtdispatch-1.11.jar
-[info] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch;1.11!hawtdispatch.jar(bundle) (1414ms)
+[info] 	[SUCCESSFUL ] org.fusesource.hawtdispatch#hawtdispatch;1.11!hawtdispatch.jar(bundle) (2151ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.jar
 [info] downloading https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-aop/3.0.7.RELEASE/spring-aop-3.0.7.RELEASE.jar
-[info] 	[SUCCESSFUL ] org.springframework#spring-aop;3.0.7.RELEASE!spring-aop.jar (4109ms)
+[info] 	[SUCCESSFUL ] org.springframework#spring-aop;3.0.7.RELEASE!spring-aop.jar (4914ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.jar
 [info] downloading https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-beans/3.0.7.RELEASE/spring-beans-3.0.7.RELEASE.jar
-[info] 	[SUCCESSFUL ] org.springframework#spring-beans;3.0.7.RELEASE!spring-beans.jar (4698ms)
+[info] 	[SUCCESSFUL ] org.springframework#spring-beans;3.0.7.RELEASE!spring-beans.jar (3687ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.jar
 [info] downloading https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.jar
-[info] 	[SUCCESSFUL ] org.springframework#spring-core;3.0.7.RELEASE!spring-core.jar (4604ms)
+[info] 	[SUCCESSFUL ] org.springframework#spring-core;3.0.7.RELEASE!spring-core.jar (4160ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.jar
 [info] downloading https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.jar
-[info] 	[SUCCESSFUL ] org.springframework#spring-expression;3.0.7.RELEASE!spring-expression.jar (4478ms)
+[info] 	[SUCCESSFUL ] org.springframework#spring-expression;3.0.7.RELEASE!spring-expression.jar (2150ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.jar
 [info] downloading https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-asm/3.0.7.RELEASE/spring-asm-3.0.7.RELEASE.jar
-[info] 	[SUCCESSFUL ] org.springframework#spring-asm;3.0.7.RELEASE!spring-asm.jar (2966ms)
+[info] 	[SUCCESSFUL ] org.springframework#spring-asm;3.0.7.RELEASE!spring-asm.jar (1235ms)
 [debug] 		tried https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
 [info] downloading https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
-[info] 	[SUCCESSFUL ] aopalliance#aopalliance;1.0!aopalliance.jar (1258ms)
+[info] 	[SUCCESSFUL ] aopalliance#aopalliance;1.0!aopalliance.jar (1022ms)
 [debug] 	[NOT REQUIRED] com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8!genjavadoc-plugin_2.10.4.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 446559ms :: artifacts dl 111552ms
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 compile produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-compile.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 runtime produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-runtime.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 test produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-test.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 provided produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-provided.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 optional produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-optional.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 compile-internal produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-compile-internal.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 runtime-internal produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-runtime-internal.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 test-internal produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-test-internal.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 plugin produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-plugin.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 sources produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-sources.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 docs produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-docs.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 pom produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-pom.xml
-[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 scala-tool produced in /home/sven/work/spark/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-scala-tool.xml
-[debug] 	resolve done (446559ms resolve - 111552ms download)
+[debug] :: resolution report :: resolve 235447ms :: artifacts dl 113077ms
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 compile produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-compile.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 runtime produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-runtime.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 test produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-test.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 provided produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-provided.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 optional produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-optional.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 compile-internal produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-compile-internal.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 runtime-internal produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-runtime-internal.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 test-internal produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-test-internal.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 plugin produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-plugin.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 sources produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-sources.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 docs produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-docs.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 pom produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-pom.xml
+[debug] 	report for org.apache.spark#spark-streaming-mqtt_2.10;1.3.0 scala-tool produced in /home/qiniu/work/spark/spark-1.3.0/external/mqtt/target/resolution-cache/reports/org.apache.spark-spark-streaming-mqtt_2.10-scala-tool.xml
+[debug] 	resolve done (235447ms resolve - 113077ms download)
 [info] Done updating.

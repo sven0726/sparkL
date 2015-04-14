@@ -281,9 +281,16 @@ abstract class RDD[T: ClassTag](
 
   /**
    * Return a new RDD by applying a function to all elements of this RDD.
+   *
+   *
    */
   def map[U: ClassTag](f: T => U): RDD[U] = {
     val cleanF = sc.clean(f)
+    /**
+     * MapPartitionsRDD 的主构造函数
+     * (prev: RDD[T],f: (TaskContext, Int, Iterator[T]) => Iterator[U],  // (TaskContext, partition index, iterator)
+    preservesPartitioning: Boolean = false)
+    */
     new MapPartitionsRDD[U, T](this, (context, pid, iter) => iter.map(cleanF))
   }
 
@@ -875,8 +882,9 @@ abstract class RDD[T: ClassTag](
     }
   }
 
-  /**
-   * Reduces the elements of this RDD using the specified commutative and
+  /** commutative 交换的
+    * associative  联合的，联想的，结合的
+    * Reduces the elements of this RDD using the specified commutative and
    * associative binary operator.
    */
   def reduce(f: (T, T) => T): T = {
@@ -897,6 +905,16 @@ abstract class RDD[T: ClassTag](
         }
       }
     }
+    /**
+    调用sparkcontext的runjob 。触发执行，运行任务
+      参数
+    runJob[T, U: ClassTag](
+      rdd: RDD[T],
+      processPartition: Iterator[T] => U,
+      resultHandler: (Int, U) => Unit)
+
+      rdd，分区处理函数，结果处理
+     */
     sc.runJob(this, reducePartition, mergeResult)
     // Get the final result out of our Option, or throw an exception if the RDD was empty
     jobResult.getOrElse(throw new UnsupportedOperationException("empty collection"))

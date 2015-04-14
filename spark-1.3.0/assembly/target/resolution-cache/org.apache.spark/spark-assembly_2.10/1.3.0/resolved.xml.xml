@@ -4,7 +4,7 @@
 		module="spark-assembly_2.10"
 		revision="1.3.0"
 		status="integration"
-		publication="20150329165305"
+		publication="20150409153042"
 	>
 		<description>
 		spark-assembly

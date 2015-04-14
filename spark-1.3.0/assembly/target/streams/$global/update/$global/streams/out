@@ -1,4 +1,4 @@
-[info] Updating {file:/home/sven/work/spark/spark/spark-1.3.0/}assembly...
+[info] Updating {file:/home/qiniu/work/spark/spark-1.3.0/}assembly...
 [debug] :: resolving dependencies :: org.apache.spark#spark-assembly_2.10;1.3.0
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for org.apache.spark#spark-assembly_2.10;1.3.0 [compile]
 [debug] == resolving dependencies org.apache.spark#spark-assembly_2.10;1.3.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6345e3b5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1405e7f8
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-library;2.10.4
@@ -1624,7 +1624,7 @@
 [debug] == resolving dependencies org.apache.spark#spark-mllib_2.10;1.3.0->org.apache.spark#spark-core_2.10;1.3.0 [compile->default(compile)]
 [debug] == resolving dependencies org.apache.spark#spark-mllib_2.10;1.3.0->org.apache.spark#spark-streaming_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6744a9ad
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c363714
 [debug] 	found org.apache.spark#spark-streaming_2.10;1.3.0 in inter-project
 [debug] == resolving dependencies org.apache.spark#spark-streaming_2.10;1.3.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [debug] == resolving dependencies org.apache.spark#spark-streaming_2.10;1.3.0->org.scala-lang#scala-library;2.10.4 [compile->runtime]
@@ -1646,11 +1646,11 @@
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.apache.spark#spark-core_2.10;1.3.0 [compile->default(compile)]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.apache.spark#spark-catalyst_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-catalyst_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3452c25c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@79287502
 [debug] 	found org.apache.spark#spark-catalyst_2.10;1.3.0 in inter-project
 [debug] == resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0->org.scala-lang#scala-compiler;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41bbbb5c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@393470f0
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.4
 [debug] 	found org.scala-lang#scala-compiler;2.10.4 in sbt-chain
 [debug] == resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0->org.scala-lang#scala-compiler;2.10.4 [compile->runtime]
@@ -9808,19 +9808,19 @@
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
 [debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.10;2.2.1!scalatest_2.10.jar(bundle)
 [debug] 	[NOT REQUIRED] com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8!genjavadoc-plugin_2.10.4.jar
-[debug] :: resolution report :: resolve 1026ms :: artifacts dl 28ms
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 compile produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-compile.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 runtime produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-runtime.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 test produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-test.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 provided produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-provided.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 optional produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-optional.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 compile-internal produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-compile-internal.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 runtime-internal produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-runtime-internal.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 test-internal produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-test-internal.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 plugin produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-plugin.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 sources produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-sources.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 docs produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-docs.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 pom produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-pom.xml
-[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 scala-tool produced in /home/sven/work/spark/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-scala-tool.xml
-[debug] 	resolve done (1026ms resolve - 28ms download)
+[debug] :: resolution report :: resolve 1999ms :: artifacts dl 52ms
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 compile produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-compile.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 runtime produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-runtime.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 test produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-test.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 provided produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-provided.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 optional produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-optional.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 compile-internal produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-compile-internal.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 runtime-internal produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-runtime-internal.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 test-internal produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-test-internal.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 plugin produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-plugin.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 sources produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-sources.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 docs produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-docs.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 pom produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-pom.xml
+[debug] 	report for org.apache.spark#spark-assembly_2.10;1.3.0 scala-tool produced in /home/qiniu/work/spark/spark-1.3.0/assembly/target/resolution-cache/reports/org.apache.spark-spark-assembly_2.10-scala-tool.xml
+[debug] 	resolve done (1999ms resolve - 52ms download)
 [info] Done updating.

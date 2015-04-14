@@ -1,4 +1,4 @@
-[info] Updating {file:/home/sven/work/spark/spark/spark-1.3.0/}sql...
+[info] Updating {file:/home/qiniu/work/spark/spark-1.3.0/}sql...
 [debug] :: resolving dependencies :: org.apache.spark#spark-sql_2.10;1.3.0
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for org.apache.spark#spark-sql_2.10;1.3.0 [compile]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55f8747a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@603ff5b6
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-library;2.10.4
@@ -1612,11 +1612,11 @@
 [debug] == resolving dependencies org.apache.spark#spark-core_2.10;1.3.0->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.apache.spark#spark-catalyst_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-catalyst_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20eee2e9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31a0b398
 [debug] 	found org.apache.spark#spark-catalyst_2.10;1.3.0 in inter-project
 [debug] == resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0->org.scala-lang#scala-compiler;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7839e182
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12ae832b
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.4
 [debug] 	found org.scala-lang#scala-compiler;2.10.4 in sbt-chain
 [debug] == resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0->org.scala-lang#scala-compiler;2.10.4 [compile->runtime]
@@ -1674,38 +1674,183 @@
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.twitter#parquet-column;1.6.0rc3 [compile->default(compile)]
 [info] Resolving com.twitter#parquet-column;1.6.0rc3 ...
 [debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet-column;1.6.0rc3 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.twitter#parquet-column;1.6.0rc3
-[debug] 	found com.twitter#parquet-column;1.6.0rc3 in sbt-chain
+[info] Resolving com.twitter#parquet-column;1.6.0rc3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.twitter#parquet-column;1.6.0rc3 {compile=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-column/1.6.0rc3/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.twitter#parquet-column;1.6.0rc3
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.pom
+[debug] 	public: found md file for com.twitter#parquet-column;1.6.0rc3
+[debug] 		=> https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.pom (1.6.0rc3)
+[debug] downloading https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.pom
+[debug] 	[SUCCESSFUL ] com.twitter#parquet-column;1.6.0rc3!parquet-column.pom(pom.original) (1170ms)
+[info] Resolving com.twitter#parquet;1.6.0rc3 ...
+[debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet;1.6.0rc3 {}
+[info] Resolving com.twitter#parquet;1.6.0rc3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.twitter#parquet;1.6.0rc3 {}
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet/1.6.0rc3/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.twitter#parquet;1.6.0rc3
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.pom
+[debug] 	public: found md file for com.twitter#parquet;1.6.0rc3
+[debug] 		=> https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.pom (1.6.0rc3)
+[debug] downloading https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.pom
+[debug] 	[SUCCESSFUL ] com.twitter#parquet;1.6.0rc3!parquet.pom(pom.original) (1171ms)
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet/1.6.0rc3/jars/parquet.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried https://repository.apache.org/content/repositories/releases/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried http://repository.mapr.com/maven/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried https://repo.spring.io/libs-release/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried http://repository.apache.org/snapshots/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/com/twitter/parquet/1.6.0rc3/parquet-1.6.0rc3.jar
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-column/1.6.0rc3/jars/parquet-column.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.jar
+[debug] 	found com.twitter#parquet-column;1.6.0rc3 in public
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.twitter#parquet-column;1.6.0rc3 [compile->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.twitter#parquet-column;1.6.0rc3 [compile->compile]
 [debug] == resolving dependencies com.twitter#parquet-column;1.6.0rc3->com.twitter#parquet-common;1.6.0rc3 [compile->compile(*)]
 [info] Resolving com.twitter#parquet-common;1.6.0rc3 ...
 [debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet-common;1.6.0rc3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: com.twitter#parquet-common;1.6.0rc3
-[debug] 	found com.twitter#parquet-common;1.6.0rc3 in sbt-chain
+[info] Resolving com.twitter#parquet-common;1.6.0rc3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.twitter#parquet-common;1.6.0rc3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-common/1.6.0rc3/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.twitter#parquet-common;1.6.0rc3
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.pom
+[debug] 	public: found md file for com.twitter#parquet-common;1.6.0rc3
+[debug] 		=> https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.pom (1.6.0rc3)
+[debug] downloading https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.pom
+[debug] 	[SUCCESSFUL ] com.twitter#parquet-common;1.6.0rc3!parquet-common.pom(pom.original) (1309ms)
+[info] Resolving com.twitter#parquet;1.6.0rc3 ...
+[debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet;1.6.0rc3 {}
+[debug] sbt-chain: module revision found in cache: com.twitter#parquet;1.6.0rc3
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-common/1.6.0rc3/jars/parquet-common.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.jar
+[debug] 	found com.twitter#parquet-common;1.6.0rc3 in public
 [debug] == resolving dependencies com.twitter#parquet-column;1.6.0rc3->com.twitter#parquet-common;1.6.0rc3 [compile->master(compile)]
 [debug] == resolving dependencies com.twitter#parquet-column;1.6.0rc3->com.twitter#parquet-common;1.6.0rc3 [compile->runtime(*)]
 [debug] == resolving dependencies com.twitter#parquet-column;1.6.0rc3->com.twitter#parquet-common;1.6.0rc3 [compile->compile]
 [debug] == resolving dependencies com.twitter#parquet-column;1.6.0rc3->com.twitter#parquet-encoding;1.6.0rc3 [compile->compile(*)]
 [info] Resolving com.twitter#parquet-encoding;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet-encoding;1.6.0rc3 {compile=[compile(*), master(compile)], runtime=[runtime(*)], test=[runtime(*), master(compile)]}
-[debug] sbt-chain: module revision found in cache: com.twitter#parquet-encoding;1.6.0rc3
-[debug] 	found com.twitter#parquet-encoding;1.6.0rc3 in sbt-chain
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@572b62ef
+[info] Resolving com.twitter#parquet-encoding;1.6.0rc3 ...
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@572b62ef
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-encoding/1.6.0rc3/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.twitter#parquet-encoding;1.6.0rc3
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.pom
+[debug] 	public: found md file for com.twitter#parquet-encoding;1.6.0rc3
+[debug] 		=> https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.pom (1.6.0rc3)
+[debug] downloading https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.pom
+[debug] 	[SUCCESSFUL ] com.twitter#parquet-encoding;1.6.0rc3!parquet-encoding.pom(pom.original) (1198ms)
+[info] Resolving com.twitter#parquet;1.6.0rc3 ...
+[debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet;1.6.0rc3 {}
+[debug] sbt-chain: module revision found in cache: com.twitter#parquet;1.6.0rc3
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-encoding/1.6.0rc3/jars/parquet-encoding.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.jar
+[debug] 	found com.twitter#parquet-encoding;1.6.0rc3 in public
 [debug] == resolving dependencies com.twitter#parquet-encoding;1.6.0rc3->com.twitter#parquet-common;1.6.0rc3 [compile->compile(*)]
 [debug] == resolving dependencies com.twitter#parquet-encoding;1.6.0rc3->com.twitter#parquet-common;1.6.0rc3 [compile->master(compile)]
 [debug] == resolving dependencies com.twitter#parquet-encoding;1.6.0rc3->com.twitter#parquet-generator;1.6.0rc3 [compile->compile(*)]
 [info] Resolving com.twitter#parquet-generator;1.6.0rc3 ...
 [debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet-generator;1.6.0rc3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: com.twitter#parquet-generator;1.6.0rc3
-[debug] 	found com.twitter#parquet-generator;1.6.0rc3 in sbt-chain
+[info] Resolving com.twitter#parquet-generator;1.6.0rc3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.twitter#parquet-generator;1.6.0rc3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-generator/1.6.0rc3/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.twitter#parquet-generator;1.6.0rc3
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.pom
+[debug] 	public: found md file for com.twitter#parquet-generator;1.6.0rc3
+[debug] 		=> https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.pom (1.6.0rc3)
+[debug] downloading https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.pom
+[debug] 	[SUCCESSFUL ] com.twitter#parquet-generator;1.6.0rc3!parquet-generator.pom(pom.original) (1261ms)
+[info] Resolving com.twitter#parquet;1.6.0rc3 ...
+[debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet;1.6.0rc3 {}
+[debug] sbt-chain: module revision found in cache: com.twitter#parquet;1.6.0rc3
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-generator/1.6.0rc3/jars/parquet-generator.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.jar
+[debug] 	found com.twitter#parquet-generator;1.6.0rc3 in public
 [debug] == resolving dependencies com.twitter#parquet-generator;1.6.0rc3->com.twitter#parquet-common;1.6.0rc3 [compile->compile(*)]
 [debug] == resolving dependencies com.twitter#parquet-generator;1.6.0rc3->com.twitter#parquet-common;1.6.0rc3 [compile->master(compile)]
 [debug] == resolving dependencies com.twitter#parquet-encoding;1.6.0rc3->com.twitter#parquet-generator;1.6.0rc3 [compile->master(compile)]
 [debug] == resolving dependencies com.twitter#parquet-encoding;1.6.0rc3->commons-codec#commons-codec;1.5 [compile->compile(*)]
 [info] Resolving commons-codec#commons-codec;1.5 ...
 [debug] sbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.5
-[debug] 	found commons-codec#commons-codec;1.5 in sbt-chain
+[info] Resolving commons-codec#commons-codec;1.5 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: commons-codec#commons-codec;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/commons-codec/commons-codec/1.5/ivys/ivy.xml
+[debug] 	local: no ivy file found for commons-codec#commons-codec;1.5
+[debug] 		tried https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom
+[debug] 	public: found md file for commons-codec#commons-codec;1.5
+[debug] 		=> https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom (1.5)
+[debug] downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom
+[debug] 	[SUCCESSFUL ] commons-codec#commons-codec;1.5!commons-codec.pom(pom.original) (1415ms)
+[info] Resolving org.apache.commons#commons-parent;20 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;20 {}
+[info] Resolving org.apache.commons#commons-parent;20 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-parent;20 {}
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.commons/commons-parent/20/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.apache.commons#commons-parent;20
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.pom
+[debug] 	public: found md file for org.apache.commons#commons-parent;20
+[debug] 		=> https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.pom (20)
+[debug] downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.pom
+[debug] 	[SUCCESSFUL ] org.apache.commons#commons-parent;20!commons-parent.pom(pom.original) (1814ms)
+[info] Resolving org.apache#apache;9 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache#apache;9 {}
+[debug] sbt-chain: module revision found in cache: org.apache#apache;9
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache.commons/commons-parent/20/jars/commons-parent.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried https://repository.apache.org/content/repositories/releases/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried http://repository.mapr.com/maven/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried https://repo.spring.io/libs-release/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried http://repository.apache.org/snapshots/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/commons/commons-parent/20/commons-parent-20.jar
+[debug] 		tried /home/qiniu/.ivy2/local/commons-codec/commons-codec/1.5/jars/commons-codec.jar
+[debug] 		tried https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.jar
+[debug] 	found commons-codec#commons-codec;1.5 in public
 [debug] == resolving dependencies com.twitter#parquet-encoding;1.6.0rc3->commons-codec#commons-codec;1.5 [compile->master(compile)]
 [debug] == resolving dependencies com.twitter#parquet-encoding;1.6.0rc3->commons-codec#commons-codec;1.5 [compile->runtime(*)]
 [debug] == resolving dependencies com.twitter#parquet-encoding;1.6.0rc3->commons-codec#commons-codec;1.5 [compile->compile]
@@ -1732,8 +1877,24 @@
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.twitter#parquet-hadoop;1.6.0rc3 [compile->default(compile)]
 [info] Resolving com.twitter#parquet-hadoop;1.6.0rc3 ...
 [debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet-hadoop;1.6.0rc3 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.twitter#parquet-hadoop;1.6.0rc3
-[debug] 	found com.twitter#parquet-hadoop;1.6.0rc3 in sbt-chain
+[info] Resolving com.twitter#parquet-hadoop;1.6.0rc3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.twitter#parquet-hadoop;1.6.0rc3 {compile=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-hadoop/1.6.0rc3/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.twitter#parquet-hadoop;1.6.0rc3
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.pom
+[debug] 	public: found md file for com.twitter#parquet-hadoop;1.6.0rc3
+[debug] 		=> https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.pom (1.6.0rc3)
+[debug] downloading https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.pom
+[debug] 	[SUCCESSFUL ] com.twitter#parquet-hadoop;1.6.0rc3!parquet-hadoop.pom(pom.original) (1102ms)
+[info] Resolving com.twitter#parquet;1.6.0rc3 ...
+[debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet;1.6.0rc3 {}
+[debug] sbt-chain: module revision found in cache: com.twitter#parquet;1.6.0rc3
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-hadoop/1.6.0rc3/jars/parquet-hadoop.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.jar
+[debug] 	found com.twitter#parquet-hadoop;1.6.0rc3 in public
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.twitter#parquet-hadoop;1.6.0rc3 [compile->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.twitter#parquet-hadoop;1.6.0rc3 [compile->compile]
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->com.twitter#parquet-column;1.6.0rc3 [compile->compile(*)]
@@ -1743,29 +1904,118 @@
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->com.twitter#parquet-format;2.2.0-rc1 [compile->compile(*)]
 [info] Resolving com.twitter#parquet-format;2.2.0-rc1 ...
 [debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet-format;2.2.0-rc1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: com.twitter#parquet-format;2.2.0-rc1
-[debug] 	found com.twitter#parquet-format;2.2.0-rc1 in sbt-chain
+[info] Resolving com.twitter#parquet-format;2.2.0-rc1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.twitter#parquet-format;2.2.0-rc1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-format/2.2.0-rc1/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.twitter#parquet-format;2.2.0-rc1
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.pom
+[debug] 	public: found md file for com.twitter#parquet-format;2.2.0-rc1
+[debug] 		=> https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.pom (2.2.0-rc1)
+[debug] downloading https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.pom
+[debug] 	[SUCCESSFUL ] com.twitter#parquet-format;2.2.0-rc1!parquet-format.pom(pom.original) (1221ms)
+[info] Resolving org.apache#apache;14 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache#apache;14 {}
+[info] Resolving org.apache#apache;14 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache#apache;14 {}
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache/apache/14/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.apache#apache;14
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.pom
+[debug] 	public: found md file for org.apache#apache;14
+[debug] 		=> https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.pom (14)
+[debug] downloading https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.pom
+[debug] 	[SUCCESSFUL ] org.apache#apache;14!apache.pom(pom.original) (1426ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.apache/apache/14/jars/apache.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/apache/14/apache-14.jar
+[debug] 		tried https://repository.apache.org/content/repositories/releases/org/apache/apache/14/apache-14.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/org/apache/apache/14/apache-14.jar
+[debug] 		tried https://repository.jboss.org/nexus/content/repositories/releases/org/apache/apache/14/apache-14.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/org/apache/apache/14/apache-14.jar
+[debug] 		tried https://repo.eclipse.org/content/repositories/paho-releases/org/apache/apache/14/apache-14.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/org/apache/apache/14/apache-14.jar
+[debug] 		tried https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/apache/14/apache-14.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/apache/14/apache-14.jar
+[debug] 		tried http://repository.mapr.com/maven/org/apache/apache/14/apache-14.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.mapr.com/maven/org/apache/apache/14/apache-14.jar
+[debug] 		tried https://repo.spring.io/libs-release/org/apache/apache/14/apache-14.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.spring.io/libs-release/org/apache/apache/14/apache-14.jar
+[debug] 		tried http://repository.apache.org/snapshots/org/apache/apache/14/apache-14.jar
+[debug] CLIENT ERROR: Not Found url=http://repository.apache.org/snapshots/org/apache/apache/14/apache-14.jar
+[debug] 		tried file:/home/qiniu/.m2/repository/org/apache/apache/14/apache-14.jar
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-format/2.2.0-rc1/jars/parquet-format.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.jar
+[debug] 	found com.twitter#parquet-format;2.2.0-rc1 in public
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->com.twitter#parquet-format;2.2.0-rc1 [compile->master(compile)]
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->com.twitter#parquet-format;2.2.0-rc1 [compile->runtime(*)]
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->com.twitter#parquet-format;2.2.0-rc1 [compile->compile]
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->com.twitter#parquet-jackson;1.6.0rc3 [compile->compile(*)]
 [info] Resolving com.twitter#parquet-jackson;1.6.0rc3 ...
 [debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet-jackson;1.6.0rc3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: com.twitter#parquet-jackson;1.6.0rc3
-[debug] 	found com.twitter#parquet-jackson;1.6.0rc3 in sbt-chain
+[info] Resolving com.twitter#parquet-jackson;1.6.0rc3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.twitter#parquet-jackson;1.6.0rc3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-jackson/1.6.0rc3/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.twitter#parquet-jackson;1.6.0rc3
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.pom
+[debug] 	public: found md file for com.twitter#parquet-jackson;1.6.0rc3
+[debug] 		=> https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.pom (1.6.0rc3)
+[debug] downloading https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.pom
+[debug] 	[SUCCESSFUL ] com.twitter#parquet-jackson;1.6.0rc3!parquet-jackson.pom(pom.original) (1229ms)
+[info] Resolving com.twitter#parquet;1.6.0rc3 ...
+[debug] sbt-chain: Checking cache for: dependency: com.twitter#parquet;1.6.0rc3 {}
+[debug] sbt-chain: module revision found in cache: com.twitter#parquet;1.6.0rc3
+[debug] 		tried /home/qiniu/.ivy2/local/com.twitter/parquet-jackson/1.6.0rc3/jars/parquet-jackson.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.jar
+[debug] 	found com.twitter#parquet-jackson;1.6.0rc3 in public
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->com.twitter#parquet-jackson;1.6.0rc3 [compile->master(compile)]
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->com.twitter#parquet-jackson;1.6.0rc3 [compile->runtime(*)]
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->com.twitter#parquet-jackson;1.6.0rc3 [compile->compile]
 [debug] == resolving dependencies com.twitter#parquet-hadoop;1.6.0rc3->org.codehaus.jackson#jackson-mapper-asl;1.9.11 [compile->compile(*)]
 [info] Resolving org.codehaus.jackson#jackson-mapper-asl;1.9.11 ...
 [debug] sbt-chain: Checking cache for: dependency: org.codehaus.jackson#jackson-mapper-asl;1.9.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.11
-[debug] 	found org.codehaus.jackson#jackson-mapper-asl;1.9.11 in sbt-chain
+[info] Resolving org.codehaus.jackson#jackson-mapper-asl;1.9.11 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.codehaus.jackson#jackson-mapper-asl;1.9.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.codehaus.jackson/jackson-mapper-asl/1.9.11/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.codehaus.jackson#jackson-mapper-asl;1.9.11
+[debug] 		tried https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom
+[debug] 	public: found md file for org.codehaus.jackson#jackson-mapper-asl;1.9.11
+[debug] 		=> https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom (1.9.11)
+[debug] downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom
+[debug] 	[SUCCESSFUL ] org.codehaus.jackson#jackson-mapper-asl;1.9.11!jackson-mapper-asl.pom(pom.original) (1119ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.codehaus.jackson/jackson-mapper-asl/1.9.11/jars/jackson-mapper-asl.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar
+[debug] 	found org.codehaus.jackson#jackson-mapper-asl;1.9.11 in public
 [debug] == resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.11->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->compile(*)]
 [info] Resolving org.codehaus.jackson#jackson-core-asl;1.9.11 ...
 [debug] sbt-chain: Checking cache for: dependency: org.codehaus.jackson#jackson-core-asl;1.9.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-core-asl;1.9.11
-[debug] 	found org.codehaus.jackson#jackson-core-asl;1.9.11 in sbt-chain
+[info] Resolving org.codehaus.jackson#jackson-core-asl;1.9.11 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.codehaus.jackson#jackson-core-asl;1.9.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.codehaus.jackson/jackson-core-asl/1.9.11/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.codehaus.jackson#jackson-core-asl;1.9.11
+[debug] 		tried https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom
+[debug] 	public: found md file for org.codehaus.jackson#jackson-core-asl;1.9.11
+[debug] 		=> https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom (1.9.11)
+[debug] downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom
+[debug] 	[SUCCESSFUL ] org.codehaus.jackson#jackson-core-asl;1.9.11!jackson-core-asl.pom(pom.original) (1232ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.codehaus.jackson/jackson-core-asl/1.9.11/jars/jackson-core-asl.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar
+[debug] 	found org.codehaus.jackson#jackson-core-asl;1.9.11 in public
 [debug] == resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.11->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->master(compile)]
 [debug] == resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.11->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->runtime(*)]
 [debug] == resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.11->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->compile]
@@ -1802,8 +2052,21 @@
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.jodd#jodd-core;3.6.3 [compile->default(compile)]
 [info] Resolving org.jodd#jodd-core;3.6.3 ...
 [debug] sbt-chain: Checking cache for: dependency: org.jodd#jodd-core;3.6.3 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: org.jodd#jodd-core;3.6.3
-[debug] 	found org.jodd#jodd-core;3.6.3 in sbt-chain
+[info] Resolving org.jodd#jodd-core;3.6.3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.jodd#jodd-core;3.6.3 {compile=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.jodd/jodd-core/3.6.3/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.jodd#jodd-core;3.6.3
+[debug] 		tried https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.pom
+[debug] 	public: found md file for org.jodd#jodd-core;3.6.3
+[debug] 		=> https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.pom (3.6.3)
+[debug] downloading https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.pom
+[debug] 	[SUCCESSFUL ] org.jodd#jodd-core;3.6.3!jodd-core.pom(pom.original) (1234ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.jodd/jodd-core/3.6.3/jars/jodd-core.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.jar
+[debug] 	found org.jodd#jodd-core;3.6.3 in public
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.jodd#jodd-core;3.6.3 [compile->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.jodd#jodd-core;3.6.3 [compile->compile]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.jodd#jodd-core;3.6.3 [compile->master]
@@ -4481,24 +4744,63 @@
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.h2database#h2;1.4.183 [test->default(compile)]
 [info] Resolving com.h2database#h2;1.4.183 ...
 [debug] sbt-chain: Checking cache for: dependency: com.h2database#h2;1.4.183 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.h2database#h2;1.4.183
-[debug] 	found com.h2database#h2;1.4.183 in sbt-chain
+[info] Resolving com.h2database#h2;1.4.183 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.h2database#h2;1.4.183 {test=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/com.h2database/h2/1.4.183/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.h2database#h2;1.4.183
+[debug] 		tried https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.pom
+[debug] 	public: found md file for com.h2database#h2;1.4.183
+[debug] 		=> https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.pom (1.4.183)
+[debug] downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.pom
+[debug] 	[SUCCESSFUL ] com.h2database#h2;1.4.183!h2.pom(pom.original) (1065ms)
+[debug] 		tried /home/qiniu/.ivy2/local/com.h2database/h2/1.4.183/jars/h2.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.jar
+[debug] 	found com.h2database#h2;1.4.183 in public
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.h2database#h2;1.4.183 [test->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.h2database#h2;1.4.183 [test->compile]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->com.h2database#h2;1.4.183 [test->master]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->mysql#mysql-connector-java;5.1.34 [test->default(compile)]
 [info] Resolving mysql#mysql-connector-java;5.1.34 ...
 [debug] sbt-chain: Checking cache for: dependency: mysql#mysql-connector-java;5.1.34 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: mysql#mysql-connector-java;5.1.34
-[debug] 	found mysql#mysql-connector-java;5.1.34 in sbt-chain
+[info] Resolving mysql#mysql-connector-java;5.1.34 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: mysql#mysql-connector-java;5.1.34 {test=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/mysql/mysql-connector-java/5.1.34/ivys/ivy.xml
+[debug] 	local: no ivy file found for mysql#mysql-connector-java;5.1.34
+[debug] 		tried https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.pom
+[debug] 	public: found md file for mysql#mysql-connector-java;5.1.34
+[debug] 		=> https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.pom (5.1.34)
+[debug] downloading https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.pom
+[debug] 	[SUCCESSFUL ] mysql#mysql-connector-java;5.1.34!mysql-connector-java.pom(pom.original) (1229ms)
+[debug] 		tried /home/qiniu/.ivy2/local/mysql/mysql-connector-java/5.1.34/jars/mysql-connector-java.jar
+[debug] 		tried https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar
+[debug] 	found mysql#mysql-connector-java;5.1.34 in public
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->mysql#mysql-connector-java;5.1.34 [test->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->mysql#mysql-connector-java;5.1.34 [test->compile]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->mysql#mysql-connector-java;5.1.34 [test->master]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.postgresql#postgresql;9.3-1102-jdbc41 [test->default(compile)]
 [info] Resolving org.postgresql#postgresql;9.3-1102-jdbc41 ...
 [debug] sbt-chain: Checking cache for: dependency: org.postgresql#postgresql;9.3-1102-jdbc41 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: org.postgresql#postgresql;9.3-1102-jdbc41
-[debug] 	found org.postgresql#postgresql;9.3-1102-jdbc41 in sbt-chain
+[info] Resolving org.postgresql#postgresql;9.3-1102-jdbc41 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.postgresql#postgresql;9.3-1102-jdbc41 {test=[default(compile)]}
+[debug] 		tried /home/qiniu/.ivy2/local/org.postgresql/postgresql/9.3-1102-jdbc41/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.postgresql#postgresql;9.3-1102-jdbc41
+[debug] 		tried https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom
+[debug] 	public: found md file for org.postgresql#postgresql;9.3-1102-jdbc41
+[debug] 		=> https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom (9.3-1102-jdbc41)
+[debug] downloading https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom
+[debug] 	[SUCCESSFUL ] org.postgresql#postgresql;9.3-1102-jdbc41!postgresql.pom(pom.original) (1113ms)
+[debug] 		tried /home/qiniu/.ivy2/local/org.postgresql/postgresql/9.3-1102-jdbc41/jars/postgresql.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar
+[debug] 	found org.postgresql#postgresql;9.3-1102-jdbc41 in public
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.postgresql#postgresql;9.3-1102-jdbc41 [test->runtime]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.postgresql#postgresql;9.3-1102-jdbc41 [test->compile]
 [debug] == resolving dependencies org.apache.spark#spark-sql_2.10;1.3.0->org.postgresql#postgresql;9.3-1102-jdbc41 [test->master]
@@ -8617,9 +8919,24 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar
-[debug] 	[NOT REQUIRED] com.twitter#parquet-column;1.6.0rc3!parquet-column.jar
-[debug] 	[NOT REQUIRED] com.twitter#parquet-hadoop;1.6.0rc3!parquet-hadoop.jar
-[debug] 	[NOT REQUIRED] org.jodd#jodd-core;3.6.3!jodd-core.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.jar
+[info] downloading https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.jar
+[info] 	[SUCCESSFUL ] com.twitter#parquet-column;1.6.0rc3!parquet-column.jar (5782ms)
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.jar
+[info] downloading https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.jar
+[info] 	[SUCCESSFUL ] com.twitter#parquet-hadoop;1.6.0rc3!parquet-hadoop.jar (2669ms)
+[debug] 		tried https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.jar
+[info] downloading https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.jar
+[info] 	[SUCCESSFUL ] org.jodd#jodd-core;3.6.3!jodd-core.jar (2862ms)
 [debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar
 [debug] 	[NOT REQUIRED] com.google.guava#guava;14.0.1!guava.jar(bundle)
 [debug] 	[NOT REQUIRED] com.twitter#chill_2.10;0.5.0!chill_2.10.jar
@@ -8709,14 +9026,54 @@
 [debug] 	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar
 [debug] 	[NOT REQUIRED] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar
-[debug] 	[NOT REQUIRED] com.twitter#parquet-common;1.6.0rc3!parquet-common.jar
-[debug] 	[NOT REQUIRED] com.twitter#parquet-encoding;1.6.0rc3!parquet-encoding.jar
-[debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.5!commons-codec.jar
-[debug] 	[NOT REQUIRED] com.twitter#parquet-generator;1.6.0rc3!parquet-generator.jar
-[debug] 	[NOT REQUIRED] com.twitter#parquet-format;2.2.0-rc1!parquet-format.jar
-[debug] 	[NOT REQUIRED] com.twitter#parquet-jackson;1.6.0rc3!parquet-jackson.jar
-[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-mapper-asl;1.9.11!jackson-mapper-asl.jar
-[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.11!jackson-core-asl.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.jar
+[info] downloading https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.jar
+[info] 	[SUCCESSFUL ] com.twitter#parquet-common;1.6.0rc3!parquet-common.jar (1181ms)
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.jar
+[info] downloading https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.jar
+[info] 	[SUCCESSFUL ] com.twitter#parquet-encoding;1.6.0rc3!parquet-encoding.jar (2664ms)
+[debug] 		tried https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.jar
+[info] downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.jar
+[info] 	[SUCCESSFUL ] commons-codec#commons-codec;1.5!commons-codec.jar (1536ms)
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.jar
+[info] downloading https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.jar
+[info] 	[SUCCESSFUL ] com.twitter#parquet-generator;1.6.0rc3!parquet-generator.jar (1227ms)
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.jar
+[info] downloading https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.jar
+[info] 	[SUCCESSFUL ] com.twitter#parquet-format;2.2.0-rc1!parquet-format.jar (3724ms)
+[debug] 		tried https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.jar
+[info] downloading https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.jar
+[info] 	[SUCCESSFUL ] com.twitter#parquet-jackson;1.6.0rc3!parquet-jackson.jar (18401ms)
+[debug] 		tried https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar
+[info] downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar
+[info] 	[SUCCESSFUL ] org.codehaus.jackson#jackson-mapper-asl;1.9.11!jackson-mapper-asl.jar (11057ms)
+[debug] 		tried https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar
+[info] downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar
+[info] 	[SUCCESSFUL ] org.codehaus.jackson#jackson-core-asl;1.9.11!jackson-core-asl.jar (2757ms)
 [debug] 	[NOT REQUIRED] org.scalacheck#scalacheck_2.10;1.11.3!scalacheck_2.10.jar
 [debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.10;2.2.1!scalatest_2.10.jar(bundle)
 [debug] 	[NOT REQUIRED] com.novocode#junit-interface;0.9!junit-interface.jar
@@ -8725,25 +9082,40 @@
 [debug] 	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar
 [debug] 	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar
 [debug] 	[NOT REQUIRED] junit#junit;4.10!junit.jar
-[debug] 	[NOT REQUIRED] com.h2database#h2;1.4.183!h2.jar
-[debug] 	[NOT REQUIRED] mysql#mysql-connector-java;5.1.34!mysql-connector-java.jar
-[debug] 	[NOT REQUIRED] org.postgresql#postgresql;9.3-1102-jdbc41!postgresql.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.jar
+[info] downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/h2database/h2/1.4.183/h2-1.4.183.jar
+[info] 	[SUCCESSFUL ] com.h2database#h2;1.4.183!h2.jar (17802ms)
+[debug] 		tried https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar
+[info] downloading https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar
+[info] 	[SUCCESSFUL ] mysql#mysql-connector-java;5.1.34!mysql-connector-java.jar (7800ms)
+[debug] 		tried https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar
+[info] downloading https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar
+[info] 	[SUCCESSFUL ] org.postgresql#postgresql;9.3-1102-jdbc41!postgresql.jar (6239ms)
 [debug] 	[NOT REQUIRED] com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8!genjavadoc-plugin_2.10.4.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1022ms :: artifacts dl 32ms
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 compile produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-compile.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 runtime produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-runtime.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 test produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-test.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 provided produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-provided.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 optional produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-optional.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 compile-internal produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-compile-internal.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 runtime-internal produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-runtime-internal.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 test-internal produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-test-internal.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 plugin produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-plugin.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 sources produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-sources.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 docs produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-docs.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 pom produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-pom.xml
-[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 scala-tool produced in /home/sven/work/spark/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-scala-tool.xml
-[debug] 	resolve done (1022ms resolve - 32ms download)
+[debug] :: resolution report :: resolve 64276ms :: artifacts dl 85758ms
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 compile produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-compile.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 runtime produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-runtime.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 test produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-test.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 provided produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-provided.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 optional produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-optional.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 compile-internal produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-compile-internal.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 runtime-internal produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-runtime-internal.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 test-internal produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-test-internal.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 plugin produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-plugin.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 sources produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-sources.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 docs produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-docs.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 pom produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-pom.xml
+[debug] 	report for org.apache.spark#spark-sql_2.10;1.3.0 scala-tool produced in /home/qiniu/work/spark/spark-1.3.0/sql/core/target/resolution-cache/reports/org.apache.spark-spark-sql_2.10-scala-tool.xml
+[debug] 	resolve done (64276ms resolve - 85758ms download)
 [info] Done updating.

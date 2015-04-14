@@ -4,7 +4,7 @@
 		module="spark-parent_2.10"
 		revision="1.3.0"
 		status="integration"
-		publication="20150329170857"
+		publication="20150409153052"
 	>
 		<description>
 		spark-parent

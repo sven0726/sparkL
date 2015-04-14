@@ -4,7 +4,7 @@
 		module="spark-examples_2.10"
 		revision="1.3.0"
 		status="integration"
-		publication="20150329163608"
+		publication="20150409152036"
 	>
 		<description>
 		spark-examples

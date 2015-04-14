@@ -74,11 +74,16 @@ import org.apache.spark.util._
  * @param config a Spark Config object describing the application configuration. Any settings in
  *   this config overrides the default configs as well as system properties.
  */
+/**
+ * 描述：  spark的主要入口。sparkcontext用于去操作spark集群。创建RDDs 累加器，广播变量
+ * @param  sparkconf
+ */
 class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationClient {
 
   // The call site where this SparkContext was constructed.
   private val creationSite: CallSite = Utils.getCallSite()
 
+  /** 多 sparkcontexts */
   // If true, log warnings instead of throwing exceptions when multiple SparkContexts are active
   private val allowMultipleContexts: Boolean =
     config.getBoolean("spark.driver.allowMultipleContexts", false)
@@ -91,6 +96,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
   // This is used only by YARN for now, but should be relevant to other cluster types (Mesos,
   // etc) too. This is typically generated from InputFormatInfo.computePreferredLocations. It
   // contains a map from hostname to a list of input format splits on the host.
+  /** 一个hostname到一个系列分片的集合的映射的map。  暂时智能用于YARN*/
   private[spark] var preferredNodeLocationData: Map[String, Set[SplitInfo]] = Map()
 
   val startTime = System.currentTimeMillis()
@@ -1442,11 +1448,13 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
     }.getOrElse(Utils.getCallSite())
   }
 
-  /**
+  /**               --》执行任务的主入口《--
    * Run a function on a given set of partitions in an RDD and pass the results to the given
    * handler function. This is the main entry point for all actions in Spark. The allowLocal
    * flag specifies whether the scheduler can run the computation on the driver rather than
    * shipping it out to the cluster, for short actions like first().
+    *
+    *
    */
   def runJob[T, U: ClassTag](
       rdd: RDD[T],
@@ -1457,15 +1465,19 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
     if (stopped) {
       throw new IllegalStateException("SparkContext has been shutdown")
     }
-    val callSite = getCallSite
+
+    val callSite = getCallSite  //取得当前用户的callsite
     val cleanedFunc = clean(func)
     logInfo("Starting job: " + callSite.shortForm)
     if (conf.getBoolean("spark.logLineage", false)) {
       logInfo("RDD's recursive dependencies:\n" + rdd.toDebugString)
     }
+    //提交到dag scheduler
     dagScheduler.runJob(rdd, cleanedFunc, partitions, callSite, allowLocal,
       resultHandler, localProperties.get)
+    //清理进度
     progressBar.foreach(_.finishAll())
+    //rdd chekpoint
     rdd.doCheckpoint()
   }
 
@@ -1485,7 +1497,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
     results
   }
 
-  /**
+  /**执行任务
    * Run a job on a given set of partitions of an RDD, but take a function of type
    * `Iterator[T] => U` instead of `(TaskContext, Iterator[T]) => U`.
    */
@@ -1498,7 +1510,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
     runJob(rdd, (context: TaskContext, iter: Iterator[T]) => func(iter), partitions, allowLocal)
   }
 
-  /**
+  /**  执行所有RDD的分区，返回一个结果数组
    * Run a job on all partitions in an RDD and return the results in an array.
    */
   def runJob[T, U: ClassTag](rdd: RDD[T], func: (TaskContext, Iterator[T]) => U): Array[U] = {

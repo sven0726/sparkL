@@ -22,7 +22,7 @@ import scala.math.random
 import org.apache.spark._
 
 /**
- * 
+ * Pi 程序代码走读
  */
 /** Computes an approximation to pi */
 object SparkPi {

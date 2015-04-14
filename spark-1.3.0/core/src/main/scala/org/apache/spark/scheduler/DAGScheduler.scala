@@ -497,6 +497,7 @@ class DAGScheduler(
     waiter
   }
 
+  //从SparkContext.run
   def runJob[T, U: ClassTag](
       rdd: RDD[T],
       func: (TaskContext, Iterator[T]) => U,
