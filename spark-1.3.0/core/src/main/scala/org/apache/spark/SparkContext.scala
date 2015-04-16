@@ -76,7 +76,7 @@ import org.apache.spark.util._
  */
 /**
  * 描述：  spark的主要入口。sparkcontext用于去操作spark集群。创建RDDs 累加器，广播变量
- * @param  sparkconf
+ * @param   sparkconf配置
  */
 class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationClient {
 
@@ -96,7 +96,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
   // This is used only by YARN for now, but should be relevant to other cluster types (Mesos,
   // etc) too. This is typically generated from InputFormatInfo.computePreferredLocations. It
   // contains a map from hostname to a list of input format splits on the host.
-  /** 一个hostname到一个系列分片的集合的映射的map。  暂时智能用于YARN*/
+  /** 一个hostname到一个系列分片的集合的映射的map。  暂时只能用于YARN*/
   private[spark] var preferredNodeLocationData: Map[String, Set[SplitInfo]] = Map()
 
   val startTime = System.currentTimeMillis()
@@ -112,6 +112,10 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
   /**
    * Create a SparkContext that loads settings from system properties (for instance, when
    * launching with ./bin/spark-submit).
+   */
+  /**
+   * 创建SparkContext 装载系统配置
+   * @return
    */
   def this() = this(new SparkConf())
 
@@ -153,7 +157,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
       master: String,
       appName: String,
       sparkHome: String = null,
-      jars: Seq[String] = Nil,
+      jars: Seq[String] = Nil,  // 被发送到机群的jars，可以使用local file，HDFS，http，https，ftp等urls
       environment: Map[String, String] = Map(),
       preferredNodeLocationData: Map[String, Set[SplitInfo]] = Map()) =
   {
@@ -363,10 +367,16 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
   executorEnvs("SPARK_USER") = sparkUser
 
   // Create and start the scheduler
+  //创建taskScheduler并启动
   private[spark] var (schedulerBackend, taskScheduler) =
     SparkContext.createTaskScheduler(this, master)
   private val heartbeatReceiver = env.actorSystem.actorOf(
     Props(new HeartbeatReceiver(taskScheduler)), "HeartbeatReceiver")
+
+
+  /**
+   * DAGScheduler  创建
+   */
   @volatile private[spark] var dagScheduler: DAGScheduler = _
   try {
     dagScheduler = new DAGScheduler(this)
@@ -382,6 +392,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
 
   // start TaskScheduler after taskScheduler sets DAGScheduler reference in DAGScheduler's
   // constructor
+  //启动taskScheduler
   taskScheduler.start()
 
   val applicationId: String = taskScheduler.applicationId()
@@ -1460,7 +1471,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
       rdd: RDD[T],
       func: (TaskContext, Iterator[T]) => U,
       partitions: Seq[Int],
-      allowLocal: Boolean,
+      allowLocal: Boolean,   //对于一些简单的action,是否允许在local执行
       resultHandler: (Int, U) => Unit) {
     if (stopped) {
       throw new IllegalStateException("SparkContext has been shutdown")
@@ -2097,6 +2108,12 @@ object SparkContext extends Logging {
    * Create a task scheduler based on a given master URL.
    * Return a 2-tuple of the scheduler backend and the task scheduler.
    */
+  /**
+   * 根据master url 创建task scheduler
+   * @param sc
+   * @param master
+   * @return   返回scheduler backend 和 task scheduler
+   */
   private def createTaskScheduler(
       sc: SparkContext,
       master: String): (SchedulerBackend, TaskScheduler) = {
@@ -2253,7 +2270,7 @@ object SparkContext extends Logging {
   }
 }
 
-/**
+/**  版本1.3.0后  代替上面sparkcontext  object中的隐式转换
  * A class encapsulating how to convert some type T to Writable. It stores both the Writable class
  * corresponding to T (e.g. IntWritable for Int) and a function for doing the conversion.
  * The getter for the writable class takes a ClassTag[T] in case this is a generic object

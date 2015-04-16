@@ -51,6 +51,10 @@ import org.apache.spark.util.{AkkaUtils, Utils}
  * NOTE: This is not intended for external use. This is exposed for Shark and may be made private
  *       in a future release.
  */
+/**
+ *SparkEnv包含spark任务（包括master和worker上的）运行时环境的各类对象。如：序列化器，akka系统，块管理器，map输出跟踪器。
+ * SparkEnv中主要包含以下关键性组件 1. BlockManager 2. MapOutputTracker 3. ShuffleManager
+ */
 @DeveloperApi
 class SparkEnv (
     val executorId: String,

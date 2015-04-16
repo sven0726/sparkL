@@ -44,6 +44,16 @@ import org.apache.spark.util.random.{BernoulliSampler, PoissonSampler, Bernoulli
   SamplingUtils}
 
 /**
+RDD由以下几个主要部分组成
+
+ 1. partitions --    partition集合，一个RDD中有多少data partition
+ 2. dependencies -- RDD依赖关系
+ 3. compute(parition) -- 对于给定的数据集，需要作哪些计算
+ 4. preferredLocations --  对于data partition的位置偏好
+ 5. partitioner -- 对于计算出来的数据结果如何分发
+ */
+
+/**
  * A Resilient Distributed Dataset (RDD), the basic abstraction in Spark. Represents an immutable,
  * partitioned collection of elements that can be operated on in parallel. This class contains the
  * basic operations available on all RDDs, such as `map`, `filter`, and `persist`. In addition,
