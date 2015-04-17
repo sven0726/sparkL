@@ -344,6 +344,7 @@ abstract class RDD[T: ClassTag](
    * If you are decreasing the number of partitions in this RDD, consider using `coalesce`,
    * which can avoid performing a shuffle.
    */
+  //用于重新设置分区数，会重新shuffle，建议使用coalesce
   def repartition(numPartitions: Int)(implicit ord: Ordering[T] = null): RDD[T] = {
     coalesce(numPartitions, shuffle = true)
   }
@@ -568,6 +569,7 @@ abstract class RDD[T: ClassTag](
    * aggregation (such as a sum or average) over each key, using [[PairRDDFunctions.aggregateByKey]]
    * or [[PairRDDFunctions.reduceByKey]] will provide much better performance.
    */
+  /** 注意：当要进行分组求和，求平均时最好使用PairRDDFunctions.aggregateByKey或着PairRDDFunctions.reduceByKey  */
   def groupBy[K](f: T => K)(implicit kt: ClassTag[K]): RDD[(K, Iterable[T])] =
     groupBy[K](f, defaultPartitioner(this))
 
@@ -580,6 +582,7 @@ abstract class RDD[T: ClassTag](
    * aggregation (such as a sum or average) over each key, using [[PairRDDFunctions.aggregateByKey]]
    * or [[PairRDDFunctions.reduceByKey]] will provide much better performance.
    */
+  /** 注意：当要进行分组求和，求平均时最好使用PairRDDFunctions.aggregateByKey或着PairRDDFunctions.reduceByKey  */
   def groupBy[K](f: T => K, numPartitions: Int)(implicit kt: ClassTag[K]): RDD[(K, Iterable[T])] =
     groupBy(f, new HashPartitioner(numPartitions))
 
@@ -592,6 +595,7 @@ abstract class RDD[T: ClassTag](
    * aggregation (such as a sum or average) over each key, using [[PairRDDFunctions.aggregateByKey]]
    * or [[PairRDDFunctions.reduceByKey]] will provide much better performance.
    */
+  /** 注意：当要进行分组求和，求平均时最好使用PairRDDFunctions.aggregateByKey或着PairRDDFunctions.reduceByKey  */
   def groupBy[K](f: T => K, p: Partitioner)(implicit kt: ClassTag[K], ord: Ordering[K] = null)
       : RDD[(K, Iterable[T])] = {
     val cleanF = sc.clean(f)
@@ -1561,6 +1565,9 @@ object RDD {
   // `import SparkContext._` to enable them. Now we move them here to make the compiler find
   // them automatically. However, we still keep the old functions in SparkContext for backward
   // compatibility and forward to the following functions directly.
+
+  /** RDD到 RDDFunctions 的隐式转换放在这里了。这样就不用引用import SparkContext._*/
+
 
   implicit def rddToPairRDDFunctions[K, V](rdd: RDD[(K, V)])
     (implicit kt: ClassTag[K], vt: ClassTag[V], ord: Ordering[K] = null): PairRDDFunctions[K, V] = {

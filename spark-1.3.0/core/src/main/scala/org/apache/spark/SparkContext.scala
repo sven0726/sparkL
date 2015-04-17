@@ -392,7 +392,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
 
   // start TaskScheduler after taskScheduler sets DAGScheduler reference in DAGScheduler's
   // constructor
-  //启动taskScheduler
+  //启动taskScheduler 及backend
   taskScheduler.start()
 
   val applicationId: String = taskScheduler.applicationId()
@@ -457,6 +457,11 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
    * Logs an error and returns None if we failed to obtain a thread dump, which could occur due
    * to an executor being dead or unresponsive or due to network issues while sending the thread
    * dump message back to the driver.
+   */
+  /**
+   *   web  UI 获取executor线程的dumps。这个操作比较损耗性能。
+   * @param executorId
+   * @return  Array[ThreadStackTrace]
    */
   private[spark] def getExecutorThreadDump(executorId: String): Option[Array[ThreadStackTrace]] = {
     try {
@@ -555,6 +560,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
   }
 
   // Post init
+  //现在实现是等待backend准备好
   taskScheduler.postStartHook()
 
   private val dagSchedulerSource = new DAGSchedulerSource(this.dagScheduler)
@@ -573,8 +579,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
    *
    * @note Parallelize acts lazily. If `seq` is a mutable collection and is altered after the call
    * to parallelize and before the first action on the RDD, the resultant RDD will reflect the
-   * modified collection. Pass a copy of the argument to avoid this.
-
+   * modified collection. Pass a copy of the argument to avoid this
    */
   def parallelize[T: ClassTag](seq: Seq[T], numSlices: Int = defaultParallelism): RDD[T] = {
     assertNotStopped()
@@ -1210,6 +1215,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
    * Return a map from the slave to the max memory available for caching and the remaining
    * memory available for caching.
    */
+  //获取slave节点的内存信息
   def getExecutorMemoryStatus: Map[String, (Long, Long)] = {
     assertNotStopped()
     env.blockManager.master.getMemoryStatus.map { case(blockManagerId, mem) =>
@@ -1385,6 +1391,7 @@ class SparkContext(config: SparkConf) extends Logging with ExecutorAllocationCli
   }
 
   /** Shut down the SparkContext. */
+  /** 停止SparkContext */
   def stop() {
     SparkContext.SPARK_CONTEXT_CONSTRUCTOR_LOCK.synchronized {
       postApplicationEnd()
