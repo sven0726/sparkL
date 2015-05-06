@@ -2,3 +2,6 @@
 /spark-1.3.0/target
 /SparkLearning/.idea
 /SparkLearning/target
+
+*.cache
+*.class

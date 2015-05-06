@@ -4,7 +4,7 @@
 		module="spark-tools_2.10"
 		revision="1.3.0"
 		status="integration"
-		publication="20150409153047"
+		publication="20150428112924"
 	>
 		<description>
 		spark-tools

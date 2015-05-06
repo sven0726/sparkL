@@ -1,4 +1,4 @@
-[info] Updating {file:/home/qiniu/work/spark/spark-1.3.0/}oldDeps...
+[info] Updating {file:/Users/qiniu/work/spark/spark-1.3.0/}oldDeps...
 [debug] :: resolving dependencies :: old-deps#old-deps_2.10;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -8,257 +8,80 @@
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-mqtt_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-streaming-mqtt_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-streaming-mqtt_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-mqtt_2.10;1.2.0!spark-streaming-mqtt_2.10.pom(pom.original) (1326ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-parent/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-parent;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-parent/1.2.0/spark-parent-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-parent;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-parent/1.2.0/spark-parent-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-parent/1.2.0/spark-parent-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-parent/1.2.0/spark-parent-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-parent/1.2.0/spark-parent-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-parent/1.2.0/spark-parent-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-parent;1.2.0!spark-parent.pom(pom.original) (1739ms)
-[info] Resolving org.apache#apache;14 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache#apache;14 {}
-[debug] sbt-chain: module revision found in cache: org.apache#apache;14
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-parent/1.2.0/jars/spark-parent.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-parent/1.2.0/spark-parent-1.2.0.jar
-[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/spark/spark-parent/1.2.0/spark-parent-1.2.0.jar
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-mqtt_2.10/1.2.0/jars/spark-streaming-mqtt_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming-mqtt_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-mqtt_2.10;1.2.0 [compile->master]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-zeromq_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-streaming-zeromq_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-streaming-zeromq_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-zeromq_2.10;1.2.0!spark-streaming-zeromq_2.10.pom(pom.original) (1095ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.2.0
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-zeromq_2.10/1.2.0/jars/spark-streaming-zeromq_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming-zeromq_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-zeromq_2.10;1.2.0 [compile->master]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-flume_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming-flume_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-streaming-flume_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-streaming-flume_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-streaming-flume_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-flume_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-streaming-flume_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-streaming-flume_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-flume_2.10;1.2.0!spark-streaming-flume_2.10.pom(pom.original) (1599ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.2.0
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-flume_2.10/1.2.0/jars/spark-streaming-flume_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-streaming-flume_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming-flume_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-streaming-flume_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-flume_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-flume_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-flume_2.10;1.2.0 [compile->master]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-kafka_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming-kafka_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-streaming-kafka_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-streaming-kafka_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-streaming-kafka_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-kafka_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-streaming-kafka_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-streaming-kafka_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-kafka_2.10;1.2.0!spark-streaming-kafka_2.10.pom(pom.original) (1234ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.2.0
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-kafka_2.10/1.2.0/jars/spark-streaming-kafka_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-streaming-kafka_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming-kafka_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-streaming-kafka_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-kafka_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-kafka_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-kafka_2.10;1.2.0 [compile->master]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-twitter_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming-twitter_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-streaming-twitter_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-streaming-twitter_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-streaming-twitter_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-twitter_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-streaming-twitter_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-streaming-twitter_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-twitter_2.10;1.2.0!spark-streaming-twitter_2.10.pom(pom.original) (1226ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.2.0
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming-twitter_2.10/1.2.0/jars/spark-streaming-twitter_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-streaming-twitter_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming-twitter_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-streaming-twitter_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-twitter_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-twitter_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming-twitter_2.10;1.2.0 [compile->master]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-streaming_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-streaming_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-streaming_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-streaming_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-streaming_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-streaming_2.10;1.2.0!spark-streaming_2.10.pom(pom.original) (1229ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.2.0
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-streaming_2.10/1.2.0/jars/spark-streaming_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-streaming_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-streaming_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming_2.10;1.2.0 [compile->master]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-mllib_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-mllib_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-mllib_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-mllib_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-mllib_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-mllib_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-mllib_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-mllib_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-mllib_2.10;1.2.0!spark-mllib_2.10.pom(pom.original) (1226ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.2.0
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-mllib_2.10/1.2.0/jars/spark-mllib_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-mllib_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-mllib_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-mllib_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-mllib_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-mllib_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-mllib_2.10;1.2.0 [compile->master]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-bagel_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-bagel_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-bagel_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-bagel_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-bagel_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-bagel_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-bagel_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-bagel_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-bagel_2.10;1.2.0!spark-bagel_2.10.pom(pom.original) (1758ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.2.0
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-bagel_2.10/1.2.0/jars/spark-bagel_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-bagel_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-bagel_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-bagel_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-bagel_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-bagel_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-bagel_2.10;1.2.0 [compile->master]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-graphx_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-graphx_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-graphx_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-graphx_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-graphx_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-graphx_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-graphx_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-graphx_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-graphx_2.10;1.2.0!spark-graphx_2.10.pom(pom.original) (1219ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.2.0
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-graphx_2.10/1.2.0/jars/spark-graphx_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-graphx_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-graphx_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-graphx_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-graphx_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-graphx_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-graphx_2.10;1.2.0 [compile->master]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-core_2.10;1.2.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-core_2.10;1.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-core_2.10;1.2.0 {compile=[default(compile)]}
-[info] Resolving org.apache.spark#spark-core_2.10;1.2.0 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-core_2.10;1.2.0 {compile=[default(compile)]}
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-core_2.10/1.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-core_2.10;1.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-core_2.10;1.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.pom (1.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-core_2.10;1.2.0!spark-core_2.10.pom(pom.original) (1537ms)
-[info] Resolving org.apache.spark#spark-parent;1.2.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.2.0
-[debug] 		tried /home/qiniu/.ivy2/local/org.apache.spark/spark-core_2.10/1.2.0/jars/spark-core_2.10.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.jar
-[debug] 	found org.apache.spark#spark-core_2.10;1.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-core_2.10;1.2.0
+[debug] 	found org.apache.spark#spark-core_2.10;1.2.0 in sbt-chain
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-core_2.10;1.2.0 [compile->runtime]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-core_2.10;1.2.0 [compile->compile]
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.apache.spark#spark-core_2.10;1.2.0 [compile->master]
@@ -559,84 +382,34 @@
 [debug] == resolving dependencies old-deps#old-deps_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-mqtt_2.10/1.2.0/spark-streaming-mqtt_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-mqtt_2.10;1.2.0!spark-streaming-mqtt_2.10.jar (1374ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-zeromq_2.10/1.2.0/spark-streaming-zeromq_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-zeromq_2.10;1.2.0!spark-streaming-zeromq_2.10.jar (1801ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/1.2.0/spark-streaming-flume_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-flume_2.10;1.2.0!spark-streaming-flume_2.10.jar (2578ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka_2.10/1.2.0/spark-streaming-kafka_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-kafka_2.10;1.2.0!spark-streaming-kafka_2.10.jar (2735ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.2.0/spark-streaming-twitter_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-twitter_2.10;1.2.0!spark-streaming-twitter_2.10.jar (1695ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.2.0/spark-streaming_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-streaming_2.10;1.2.0!spark-streaming_2.10.jar (8433ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.2.0/spark-mllib_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-mllib_2.10;1.2.0!spark-mllib_2.10.jar (14306ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-bagel_2.10/1.2.0/spark-bagel_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-bagel_2.10;1.2.0!spark-bagel_2.10.jar (1424ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.2.0/spark-graphx_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-graphx_2.10;1.2.0!spark-graphx_2.10.jar (5432ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.10/1.2.0/spark-core_2.10-1.2.0.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-core_2.10;1.2.0!spark-core_2.10.jar (74780ms)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming-mqtt_2.10;1.2.0!spark-streaming-mqtt_2.10.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming-zeromq_2.10;1.2.0!spark-streaming-zeromq_2.10.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming-flume_2.10;1.2.0!spark-streaming-flume_2.10.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming-kafka_2.10;1.2.0!spark-streaming-kafka_2.10.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming-twitter_2.10;1.2.0!spark-streaming-twitter_2.10.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming_2.10;1.2.0!spark-streaming_2.10.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-mllib_2.10;1.2.0!spark-mllib_2.10.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-bagel_2.10;1.2.0!spark-bagel_2.10.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-graphx_2.10;1.2.0!spark-graphx_2.10.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-core_2.10;1.2.0!spark-core_2.10.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 22701ms :: artifacts dl 114562ms
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT compile produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-compile.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT runtime produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-runtime.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT test produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-test.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT provided produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-provided.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT optional produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-optional.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT compile-internal produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-compile-internal.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT runtime-internal produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-runtime-internal.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT test-internal produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-test-internal.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT plugin produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-plugin.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT sources produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-sources.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT docs produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-docs.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT pom produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-pom.xml
-[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT scala-tool produced in /home/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-scala-tool.xml
-[debug] 	resolve done (22701ms resolve - 114562ms download)
+[debug] :: resolution report :: resolve 80ms :: artifacts dl 3ms
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT compile produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-compile.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT runtime produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-runtime.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT test produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-test.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT provided produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-provided.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT optional produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-optional.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT compile-internal produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-compile-internal.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT runtime-internal produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-runtime-internal.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT test-internal produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-test-internal.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT plugin produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-plugin.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT sources produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-sources.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT docs produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-docs.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT pom produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-pom.xml
+[debug] 	report for old-deps#old-deps_2.10;0.1-SNAPSHOT scala-tool produced in /Users/qiniu/work/spark/spark-1.3.0/dev/target/resolution-cache/reports/old-deps-old-deps_2.10-scala-tool.xml
+[debug] 	resolve done (80ms resolve - 3ms download)
 [info] Done updating.

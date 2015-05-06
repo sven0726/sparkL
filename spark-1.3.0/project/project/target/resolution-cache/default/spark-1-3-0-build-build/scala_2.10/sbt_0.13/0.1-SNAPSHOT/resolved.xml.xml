@@ -4,8 +4,8 @@
 		module="spark-1-3-0-build-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150401110548"
-		e:scalaVersion="2.10" e:sbtVersion="0.13"
+		publication="20150427160642"
+		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
 		spark-1-3-0-build-build
