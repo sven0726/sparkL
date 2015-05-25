@@ -56,18 +56,20 @@ object APICodeStatus {
   def main(args: Array[String]) {
 
     if (args.length < 4) {
-      System.err.println("REQ_PFDTrackerRate <zkQuorum> <group> <topics> <parallelism>")
+      System.err.println("REQ_PFDTrackerRate <zkQuorum> <group> <topics> <checkpointDir> ")
       System.exit(1)
     }
 
 
     StreamingExamples.setStreamingLogLevels()
 
-    val Array(zkQuorum, group, topics, parallelism) = args
+    val Array(zkQuorum, group, topics, checkpointDir) = args
     val sparkConf = new SparkConf().setAppName("APICodeStatus_" + new Date().getTime)
-    val ssc = new StreamingContext(sparkConf, Seconds(10))
+    println(sparkConf.get("spark.streaming.batch"))
+    val batchDuration = sparkConf.get("spark.streaming.batch")
+    val ssc = new StreamingContext(sparkConf, Seconds(batchDuration.toInt))
 
-    ssc.checkpoint("./checkpoint2")
+    ssc.checkpoint(checkpointDir)
 
     val topicMap = topics.split(",").map((_, 2)).toMap
 
@@ -89,7 +91,7 @@ object APICodeStatus {
         //"auto.offset.reset" -> "smallest", // must be compatible with when/how we are writing the input data to Kafka
         "zookeeper.connection.timeout.ms" -> "1000")
 
-      val streams = (1 to 10) map { _ =>
+      val streams = (1 to 12) map { _ =>
         KafkaUtils.createStream[Array[Byte], Array[Byte], DefaultDecoder, DefaultDecoder](
           ssc,
           kafkaParams,
@@ -103,56 +105,14 @@ object APICodeStatus {
       //unifiedStream.repartition(parallelism.toInt)
     }
 
-    // Define the actual data flow of the streaming job
-
-
-    //val decoder:BinaryDecoder = null
-    /*val value = kafkaStream.map(bytes => {
-      //println("bytes:->" + new String(bytes,"UTF-8"))
-      numInputMessages += 1
-      val reader: DatumReader[AvroFlumeEvent] = new SpecificDatumReader[AvroFlumeEvent](classOf[AvroFlumeEvent])
-
-      var e: AvroFlumeEvent = new AvroFlumeEvent()
-      val decoder = DecoderFactory.get().binaryDecoder(bytes, null)
-      e = reader.read(e, decoder)
-      //println("E    - >    :" + e.toString)
-      val headers = toStringMap(e.getHeaders)
-      var record: ApiCodeRecord = null
-      if (headers.getOrElse("service", "NULL").startsWith("REQ")) {
-        val bodyStr = getBodyAsString(e.getBody)
-        //println("-----------------------start")
-        val r = bodyStr.split("\t")
-        /*var i:Int = -1
-        r.map(x=>{
-          i+=1
-          (x,i)
-        }).foreach(println)
-*/
-        if (r.length == 14)
-        //case class ApiCodeRecord(time:String,service:String,instance:String,host:String,method:String,code:String)
-          record = ApiCodeRecord(r(2), r(1), r(12), r(13), r(3), r(7))
-        else {
-         /* println(bodyStr)
-          var i: Int = -1
-          r.map(x => {
-            i += 1
-            (x, i)
-          }).foreach(println)*/
-        }
-
-
-        //println(e.toString)
-      }
-
-      record
-    }).filter(_ != null)
-*/
 
 
     val value = kafkaStream.mapPartitions(it => {
 
       val reader: DatumReader[AvroFlumeEvent] = new SpecificDatumReader[AvroFlumeEvent](classOf[AvroFlumeEvent])
       var event: AvroFlumeEvent = new AvroFlumeEvent()
+      var decoder:BinaryDecoder = null
+
       /**
        * 对partition进行处理
        */
@@ -161,17 +121,17 @@ object APICodeStatus {
         //累计处理的消息数
         numInputMessages += 1
 
-        val decoder = DecoderFactory.get().binaryDecoder(e, null)
+        decoder = DecoderFactory.get().binaryDecoder(e, decoder)
 
         event = reader.read(event, decoder)
         val headers = RealtimeUtil.toStringMap(event.getHeaders)
-        var record: ApiCodeRecord = null
         if (headers.getOrElse("service", "NULL").startsWith("REQ")) {
           val bodyStr = RealtimeUtil.getBodyAsString(event.getBody)
           val r = bodyStr.split("\t")
           if (r.length == 14)
           //case class ApiCodeRecord(time:String,service:String,instance:String,host:String,method:String,code:String)
-            record = ApiCodeRecord(r(2).substring(0,10), r(1), r(12), r(13), r(3), r(7))
+            //record = ApiCodeRecord(r(2).substring(0,10), r(1), r(12), r(13), r(3), r(7))
+            ((r(1), r(12), r(13), r(3), r(7)),r(2).substring(0,10))
           else {
             /* println(bodyStr)
              var i: Int = -1
@@ -179,23 +139,51 @@ object APICodeStatus {
                i += 1
                (x, i)
              }).foreach(println)*/
+            null
           }
 
-        }
-        record
+        }else
+          null
+
       }
 
-      res
-    }).filter(_ != null)
+      res.filter(_!=null)
+    })
+
+   /* value.foreachRDD(rdd=>{
+
+    })*/
 
 
-
+    //value.print()
 
     //case class ApiCodeRecord(time: String, service: String, instance: String, host: String, method: String, code: String)
 
-    val tenSecodsValue = value.map(x => ((x.service, x.instance, x.host, x.method, x.code), (x.time, 1))).groupByKey(2)
+    //val tenSecodsValue = value.map(x => ((x.service, x.instance, x.host, x.method, x.code), (x.time, 1))).groupByKey(2)
+    val tenSecodsValue = value.map(x => (x._1, (x._2.toLong, 1))).groupByKey(2)
 
-    val ff = tenSecodsValue.map(x => {
+
+    tenSecodsValue.foreachRDD(rdd=>{
+      rdd.foreachPartition{ record=>
+        record.foreach(x=>{
+          var minTime: Long = Long.MaxValue
+          var maxTime: Long = Long.MinValue
+          var count: Int = 0
+          x._2.foreach(m => {
+            minTime = Math.min(minTime, m._1.toLong)
+            maxTime = Math.max(maxTime, m._1.toLong)
+            count += m._2
+          })
+          val data = new KeyedMessage[String, String]("apiCode_t", (minTime, maxTime, x._1, count).toString())
+          getKafkaProducer.send(data)
+
+          //println("已处理消息：" + data)
+        })
+      }
+    })
+
+
+   /* val ff = tenSecodsValue.map(x => {
       var minTime: Long = Long.MaxValue
       var maxTime: Long = Long.MinValue
       var count: Int = 0
@@ -210,7 +198,7 @@ object APICodeStatus {
       (minTime, maxTime, x._1, count)
     })
 
-    ff.print()
+    ff.print()*/
     ssc.start()
     ssc.awaitTermination()
 

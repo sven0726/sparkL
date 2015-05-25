@@ -1,10 +1,10 @@
 package com.qiniu.bi.realtime
 
-import java.util
+import java.text.SimpleDateFormat
+import java.util.Date
 
-import com.qiniu.bi.common.RealtimeUtil
-import java.util.{Date}
 import com.mongodb.casbah.commons.MongoDBObject
+import com.qiniu.bi.common.RealtimeUtil
 import kafka.serializer.DefaultDecoder
 import org.apache.avro.io.{DatumReader, _}
 import org.apache.avro.specific.SpecificDatumReader
@@ -13,10 +13,12 @@ import org.apache.spark.SparkConf
 import org.apache.spark.storage.StorageLevel
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
-import java.text.SimpleDateFormat
-import scala.collection.immutable._
 
+import scala.collection.immutable._
 import scala.util.parsing.json.JSON
+import org.apache.spark.Logging
+
+import org.apache.log4j.{Level, Logger}
 
 /**
  * Created by qiniu on 15/5/5.
@@ -27,8 +29,9 @@ import scala.util.parsing.json.JSON
  * $ bin/run-example com.qiniu.bi.realtime.REQ_IORate <zkQuorum> <group> <topics> <numThreads> <checkpoint> <mongoUrl>"
  */
 
-object REQ_IORate {
+object REQ_IORateTest {
 
+  //Logger.getLogger(classOf[])
 
   def main(args: Array[String]) {
 
@@ -42,7 +45,7 @@ object REQ_IORate {
     val dayHourFormat = new SimpleDateFormat("yyyyMMdd-HH")
     val dayFormat = new SimpleDateFormat("yyyyMMdd")
     val timeFormat = new SimpleDateFormat("HH:mm:ss")
-    //val dateFormat = new SimpleDateFormat("dd/MMM/yyyy HH:mm:ss Z")
+    val dateFormat = new SimpleDateFormat("dd/MMM/yyyy HH:mm:ss SSS")
 
     val Array(zkQuorum, groupName, topics, parallelism, checkpoint, mongoUrl) = args
     val sparkConf = new SparkConf().setAppName("REQ_IORate_" + new Date().getTime)
@@ -88,7 +91,6 @@ object REQ_IORate {
 
       var decoder: BinaryDecoder = null
       val res = it.map(bytes => {
-        numInputMessages +=1
         decoder = DecoderFactory.get().binaryDecoder(bytes, decoder)
         e = reader.read(e, decoder)
         val service = RealtimeUtil.toStringMap(e.getHeaders).get("service")
@@ -114,16 +116,85 @@ object REQ_IORate {
 
       })
 
-      //val rr = res.filter(_==1)//.count()
-      //util.Iterator   rr.count(_==1)
-      //List(res.count(_==1)).toIterator
+      /*val t1 = dateFormat.format(System.currentTimeMillis())
+      println(Thread.currentThread().getName + ":" + t1)
+      var count = 0
+       val res = it.map(bytes => {
+         numInputMessages += 1
+         println(bytes.length)
+         count += 1
+
+         decoder = DecoderFactory.get().binaryDecoder(bytes, decoder)
+         e = reader.read(e, decoder)
+         val service = RealtimeUtil.toStringMap(e.getHeaders).get("service")
+         service match {
+           case Some("REQ_IO") => {
+             val isRealIp: Boolean = {
+               var flag = false
+               val bodyStr = RealtimeUtil.getBodyAsString(e.getBody)
+               if (bodyStr != null) {
+                 val bodyS = bodyStr.split("\t")
+                 if (bodyS.length == 14) {
+
+                   try {
+
+                     val json = JSON.parseFull(bodyS(5))
+
+                     /*val getHeaderJson: Map[String, Any] = {
+                       if (json != None) json.get.asInstanceOf[Map[String, Any]] else null
+                     }*/
+
+                     //ssc.sparkContext.broadcast()
+                     /* val realIp = {
+                        if (getHeaderJson != null) getHeaderJson.get("X-Real-Ip") else None
+                      }
+                      //println("realIp!=null" + (realIp != null) + " realIp = " + realIp)
+                      if (realIp != None && realIp.get != "")
+                        flag = true
+                      else {
+                        println(" realIp = " + realIp)
+                        val ip = {
+                          if (getHeaderJson != null) getHeaderJson.get("IP").get.toString else ""
+                        }
+                        //以10 127 172 192开头的为内网ip
+                        if (ip.startsWith("10.") || ip.startsWith("127.") || ip.startsWith("172.") || ip.startsWith("192"))
+                          flag = false
+                        else
+                          flag = true
+                      }*/
+                     flag = true
+                    } catch {
+
+                      case e => {
+                        println(bodyS(5))
+
+                        e.printStackTrace()
+                      }
+                    }
+
+                 }
+
+               }
+               flag
+             }
+             if (isRealIp) 1 else 0
+
+           }
+           case _ => 0
+         }
+
+       })
+ */
       Iterator(res.count(_ == 1))
-      //res
 
-    })//.filter(_ == 1)//.repartition(2)
+    })
 
-   // val countByOneMinutsPerSecond = value.countByValue(2)
-    val countByOneMinutsPerSecond = value.reduce(_+_)
+    // val countByOneMinutsPerSecond = value.countByValue(2)
+    val countByOneMinutsPerSecond = value.reduce(_ + _)
+    //val result = value.reduceByWindow(_ + _, Seconds(60), Seconds(1))
+    //val countByOneMinutsPerSecond = value.reduceByWindow(_ + _, _ - _, Seconds(1), Seconds(1))
+    //val countByOneMinutsPerSecond = value.countByWindow(Seconds(1),Seconds(1))//ByWindow(_ + _, _ - _, Seconds(1), Seconds(1))
+    //result.print()
 
     if (mongoUrl == "test") {
       val result = countByOneMinutsPerSecond.map(x => {
@@ -131,7 +202,6 @@ object REQ_IORate {
       })
 
       result.print()
-      //value.print()
     }
     else {
       countByOneMinutsPerSecond.foreachRDD(rdd => rdd.foreachPartition(p => {
